@@ -4,6 +4,10 @@
   --muted: 248 250 252;        /* slate-50 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Optional small tweaks */
 .font-inter {
   font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
@@ -22,11 +26,10 @@
   font-size: 0.875rem;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 
 /* AOS fallback spacing if JS disabled */
 [data-aos] { opacity: 1; transform: none; }
+
 
