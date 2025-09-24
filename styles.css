@@ -22,5 +22,11 @@
   font-size: 0.875rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* AOS fallback spacing if JS disabled */
 [data-aos] { opacity: 1; transform: none; }
+
