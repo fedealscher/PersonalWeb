@@ -24,7 +24,7 @@ const resume = {
       ctaCV: "Download CV",
       ctaContact: "Contact",
       photoAlt: "Portrait of Federico Alscher",
-      cvHref: "assets/CV_FedericoAlscher_EN.docx",
+      cvHref: "assets/CV_FedericoAlscher_EN.pdf",
     },
     about: {
       title: "About",
@@ -166,20 +166,20 @@ const resume = {
     },
     contact: { title: "Contact" },
     contactForm: {
-  modalTitle: "Contact",
-  labels: { name: "Name", email: "Email", message: "Message" },
-  placeholders: {
-    name: "Your name",
-    email: "you@email.com",
-    message: "Write your message...",
-  },
-  buttons: { cancel: "Cancel", send: "Send" },
-  feedback: {
-    sending: "Sending...",
-    success: "Thanks! Your message was sent.",
-    error: "Oops! Something went wrong. Please try again.",
-  },
-},
+      modalTitle: "Contact",
+      labels: { name: "Name", email: "Email", message: "Message" },
+      placeholders: {
+        name: "Your name",
+        email: "you@email.com",
+        message: "Write your message...",
+      },
+      buttons: { cancel: "Cancel", send: "Send" },
+      feedback: {
+        sending: "Sending...",
+        success: "Thanks! Your message was sent.",
+        error: "Oops! Something went wrong. Please try again.",
+      },
+    },
   },
 
   es: {
@@ -206,7 +206,7 @@ const resume = {
       ctaCV: "Descargar CV",
       ctaContact: "Contactar",
       photoAlt: "Retrato de Federico Alscher",
-      cvHref: "assets/CV_FedericoAlscher_ES.docx",
+      cvHref: "assets/CV_FedericoAlscher_ES.pdf",
     },
     about: {
       title: "Sobre mí",
@@ -348,20 +348,20 @@ const resume = {
     },
     contact: { title: "Contacto" },
     contactForm: {
-  modalTitle: "Contacto",
-  labels: { name: "Nombre", email: "Mail", message: "Mensaje" },
-  placeholders: {
-    name: "Tu nombre",
-    email: "vos@email.com",
-    message: "Escribí tu mensaje...",
-  },
-  buttons: { cancel: "Cancelar", send: "Enviar" },
-  feedback: {
-    sending: "Enviando...",
-    success: "¡Gracias! Tu mensaje fue enviado.",
-    error: "Uy, algo falló. Probá de nuevo.",
-  },
-},
+      modalTitle: "Contacto",
+      labels: { name: "Nombre", email: "Mail", message: "Mensaje" },
+      placeholders: {
+        name: "Tu nombre",
+        email: "vos@email.com",
+        message: "Escribí tu mensaje...",
+      },
+      buttons: { cancel: "Cancelar", send: "Enviar" },
+      feedback: {
+        sending: "Enviando...",
+        success: "¡Gracias! Tu mensaje fue enviado.",
+        error: "Uy, algo falló. Probá de nuevo.",
+      },
+    },
   },
 };
 
@@ -438,7 +438,7 @@ function closeContactModal() {
   const fb = byId("cf-feedback");
   fb.classList.add("hidden");
   fb.textContent = "";
-  fb.classList.remove("text-green-700","text-red-700");
+  fb.classList.remove("text-green-700", "text-red-700");
 }
 
 
@@ -539,10 +539,10 @@ function renderSkills(t) {
       <h3 class="text-lg font-semibold mb-4 text-blue-600">${g.name}</h3>
       <div class="flex flex-wrap gap-2">
         ${g.chips
-          .map(
-            (c) => `<span class="${bg} ${text} px-3 py-1 rounded-full">${c}</span>`
-          )
-          .join("")}
+        .map(
+          (c) => `<span class="${bg} ${text} px-3 py-1 rounded-full">${c}</span>`
+        )
+        .join("")}
       </div>
     `;
     grid.appendChild(col);
@@ -657,71 +657,71 @@ function setupInteractions() {
   });
 
   // Abrir modal al hacer click en el botón del hero
-const contactBtn = byId("cta-contact");
-if (contactBtn) {
-  contactBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // evita navegar
-    openContactModal();
+  const contactBtn = byId("cta-contact");
+  if (contactBtn) {
+    contactBtn.addEventListener("click", (e) => {
+      e.preventDefault(); // evita navegar
+      openContactModal();
+    });
+  }
+
+  // Cerrar modal: botón X, Cancelar, click en el fondo, tecla ESC
+  const modal = byId("contact-modal");
+  const closeBtn = byId("contact-close");
+  const cancelBtn = byId("cf-cancel");
+
+  [closeBtn, cancelBtn].forEach((el) => {
+    if (el) el.addEventListener("click", closeContactModal);
   });
-}
 
-// Cerrar modal: botón X, Cancelar, click en el fondo, tecla ESC
-const modal = byId("contact-modal");
-const closeBtn = byId("contact-close");
-const cancelBtn = byId("cf-cancel");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeContactModal(); // clic fuera de la caja
+    });
+  }
 
-[closeBtn, cancelBtn].forEach((el) => {
-  if (el) el.addEventListener("click", closeContactModal);
-});
-
-if (modal) {
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeContactModal(); // clic fuera de la caja
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeContactModal();
   });
-}
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeContactModal();
-});
+  // Enviar formulario a Formspree
+  const form = byId("contact-form");
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const locale = currentLocale();
+      const t = resume[locale];
 
-// Enviar formulario a Formspree
-const form = byId("contact-form");
-if (form) {
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const locale = currentLocale();
-    const t = resume[locale];
+      const fb = byId("cf-feedback");
+      fb.classList.remove("hidden", "text-green-700", "text-red-700");
+      fb.classList.add("text-slate-700");
+      fb.textContent = t.contactForm.feedback.sending;
 
-    const fb = byId("cf-feedback");
-    fb.classList.remove("hidden", "text-green-700", "text-red-700");
-    fb.classList.add("text-slate-700");
-    fb.textContent = t.contactForm.feedback.sending;
+      const data = new FormData(form);
 
-    const data = new FormData(form);
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: data,
+        });
 
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: data,
-      });
-
-      if (res.ok) {
+        if (res.ok) {
+          fb.classList.remove("text-slate-700");
+          fb.classList.add("text-green-700");
+          fb.textContent = t.contactForm.feedback.success;
+          // opcional: cerrar a los 1.2s
+          setTimeout(closeContactModal, 1200);
+        } else {
+          throw new Error("Form submit failed");
+        }
+      } catch (err) {
         fb.classList.remove("text-slate-700");
-        fb.classList.add("text-green-700");
-        fb.textContent = t.contactForm.feedback.success;
-        // opcional: cerrar a los 1.2s
-        setTimeout(closeContactModal, 1200);
-      } else {
-        throw new Error("Form submit failed");
+        fb.classList.add("text-red-700");
+        fb.textContent = t.contactForm.feedback.error;
       }
-    } catch (err) {
-      fb.classList.remove("text-slate-700");
-      fb.classList.add("text-red-700");
-      fb.textContent = t.contactForm.feedback.error;
-    }
-  });
-}
+    });
+  }
 
 }
 
