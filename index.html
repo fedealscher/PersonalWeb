@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title id="site-title">Federico Alscher | Biomedical Engineer & Developer</title>
-  <meta id="site-description" name="description" content="Biomedical engineer and co-founder specialized in AI-powered diagnostic systems and real-time signal processing." />
+  <meta id="site-description" name="description"
+    content="Biomedical engineer and co-founder specialized in AI-powered diagnostic systems and real-time signal processing." />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
   <!-- Tailwind + Fonts + AOS + Feather -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
   <!-- Fallback si AOS no carga (muestra igual el contenido) -->
   <style>
-    [data-aos] { opacity: 1 !important; transform: none !important; }
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   </style>
 
   <!-- (Opcional) tu styles.css si lo usás -->
@@ -40,7 +45,9 @@
         <a id="nav-contact" href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
 
         <!-- Language toggle -->
-        <button id="lang-toggle" class="flex items-center space-x-1 px-3 py-1 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors" aria-label="Change language">
+        <button id="lang-toggle"
+          class="flex items-center space-x-1 px-3 py-1 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+          aria-label="Change language">
           <i data-feather="globe" class="w-4 h-4"></i>
           <span id="lang-label">EN</span>
         </button>
@@ -62,7 +69,9 @@
         <a id="mnav-publications" href="#publications" class="hover:text-blue-600">Publications</a>
         <a id="mnav-education" href="#education" class="hover:text-blue-600">Education</a>
         <a id="mnav-contact" href="#contact" class="hover:text-blue-600">Contact</a>
-        <button id="mlang-toggle" class="flex items-center justify-center space-x-2 px-3 py-2 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors" aria-label="Change language">
+        <button id="mlang-toggle"
+          class="flex items-center justify-center space-x-2 px-3 py-2 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+          aria-label="Change language">
           <i data-feather="globe" class="w-4 h-4"></i>
           <span id="mlang-label">EN</span>
         </button>
@@ -85,18 +94,21 @@
             <span id="hero-location">Buenos Aires City, Argentina</span>
           </p>
           <div class="flex flex-wrap gap-4">
-            <a id="cta-cv" href="assets/CV_FedericoAlscher_EN.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
+            <a id="cta-cv" href="assets/CV_FedericoAlscher_EN.pdf" download
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
               <i data-feather="download" class="mr-2"></i>
               <span id="cta-cv-label">Download CV</span>
             </a>
-            <a id="cta-contact" href="mailto:fede.alscher@gmail.com" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors flex items-center">
+            <a id="cta-contact" href="mailto:fede.alscher@gmail.com"
+              class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors flex items-center">
               <i data-feather="mail" class="mr-2"></i>
               <span id="cta-contact-label">Contact</span>
             </a>
           </div>
         </div>
         <div data-aos="fade-left" class="flex justify-center">
-          <img id="hero-photo" src="assets/profile.jpg" alt="Portrait of Federico Alscher" width="400" height="400" class="rounded-2xl shadow-xl"/>
+          <img id="hero-photo" src="assets/profile.jpg" alt="Portrait of Federico Alscher" width="400" height="400"
+            class="rounded-2xl shadow-xl" />
         </div>
       </div>
     </section>
@@ -108,7 +120,12 @@
         <div class="max-w-3xl mx-auto" data-aos="fade-up">
           <!-- Texto por defecto -->
           <p id="about-text" class="text-lg leading-relaxed text-justify">
-            Biomedical engineer and co-founder specializing in AI-based diagnostic systems and real-time signal-processing tools.
+            Biomedical Engineer and co-founder focused on data analytics and deployable solutions. I lead end-to-end
+            delivery across problem definition, requirements, data integration/cleaning, feature engineering, model
+            training and validation, and production deployment—aligning stakeholders, timelines, and measurable
+            outcomes. I work with Python, SQL, MATLAB, and C/C++, combining rapid prototyping with quality standards and
+            performance measurement. I also have experience teaching machine learning and programming at the university
+            level.
           </p>
         </div>
       </div>
@@ -160,12 +177,14 @@
         <h2 id="contact-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contact</h2>
         <div class="max-w-md mx-auto text-center">
           <div class="space-y-4" data-aos="fade-up">
-            <a id="contact-email" href="mailto:fede.alscher@gmail.com" class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
+            <a id="contact-email" href="mailto:fede.alscher@gmail.com"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
               <i data-feather="mail" class="mr-3"></i>
               <span>fede.alscher@gmail.com</span>
             </a>
-            <br/>
-            <a id="contact-linkedin" href="https://ar.linkedin.com/in/federicoalscher/en" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
+            <br />
+            <a id="contact-linkedin" href="https://ar.linkedin.com/in/federicoalscher/en" target="_blank"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
               <i data-feather="linkedin" class="mr-3"></i>
               <span>LinkedIn</span>
             </a>
@@ -176,41 +195,52 @@
   </main>
 
   <!-- Contact Modal -->
-    <div id="contact-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
-      <div class="bg-white w-full max-w-xl rounded-2xl shadow-xl overflow-hidden" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
-        <div class="flex items-center justify-between px-6 py-4 border-b">
-          <h3 id="contact-modal-title" class="text-xl font-semibold">Contact</h3>
-          <button id="contact-close" class="p-2 rounded hover:bg-slate-100" aria-label="Close">
-            <i data-feather="x"></i>
-          </button>
+  <div id="contact-modal"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
+    <div class="bg-white w-full max-w-xl rounded-2xl shadow-xl overflow-hidden" role="dialog" aria-modal="true"
+      aria-labelledby="contact-modal-title">
+      <div class="flex items-center justify-between px-6 py-4 border-b">
+        <h3 id="contact-modal-title" class="text-xl font-semibold">Contact</h3>
+        <button id="contact-close" class="p-2 rounded hover:bg-slate-100" aria-label="Close">
+          <i data-feather="x"></i>
+        </button>
+      </div>
+
+      <form id="contact-form" class="px-6 py-5 space-y-4">
+        <div>
+          <label for="cf-name" id="cf-label-name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+          <input id="cf-name" name="name" type="text" required
+            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Your name">
         </div>
 
-        <form id="contact-form" class="px-6 py-5 space-y-4">
-          <div>
-            <label for="cf-name" id="cf-label-name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
-            <input id="cf-name" name="name" type="text" required class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your name">
-          </div>
+        <div>
+          <label for="cf-email" id="cf-label-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+          <input id="cf-email" name="email" type="email" required
+            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="you@email.com">
+        </div>
 
-          <div>
-            <label for="cf-email" id="cf-label-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
-            <input id="cf-email" name="email" type="email" required class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@email.com">
-          </div>
+        <div>
+          <label for="cf-message" id="cf-label-message"
+            class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required
+            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Write your message..."></textarea>
+        </div>
 
-          <div>
-            <label for="cf-message" id="cf-label-message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
-            <textarea id="cf-message" name="message" rows="5" required class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Write your message..."></textarea>
-          </div>
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" id="cf-cancel"
+            class="px-4 py-2 rounded-md border border-slate-300 hover:bg-slate-50">Cancel</button>
+          <button type="submit" id="cf-send"
+            class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">Send</button>
+        </div>
 
-          <div class="flex items-center justify-end gap-3 pt-2">
-            <button type="button" id="cf-cancel" class="px-4 py-2 rounded-md border border-slate-300 hover:bg-slate-50">Cancel</button>
-            <button type="submit" id="cf-send" class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">Send</button>
-          </div>
-
-          <p id="cf-feedback" class="text-sm mt-2 hidden"></p>
-        </form>
-      </div>
+        <p id="cf-feedback" class="text-sm mt-2 hidden"></p>
+      </form>
     </div>
-    
+  </div>
+
   <!-- Footer -->
   <footer class="bg-slate-800 text-white py-8">
     <div class="container mx-auto px-6 text-center">
@@ -218,4 +248,5 @@
     </div>
   </footer>
 </body>
+
 </html>

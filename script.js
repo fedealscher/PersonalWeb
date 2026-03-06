@@ -20,7 +20,7 @@ const resume = {
     hero: {
       headline:
         "Co-founder || Product Developer & Data Analyst || Biomedical Engineer",
-      location: "Buenos Aires City, Argentina",
+      location: "Buenos Aires, Argentina",
       ctaCV: "Download CV",
       ctaContact: "Contact",
       photoAlt: "Portrait of Federico Alscher",
@@ -29,71 +29,98 @@ const resume = {
     about: {
       title: "About",
       text:
-        "Biomedical engineer and co-founder specializing in AI-based diagnostic systems and real-time signal-processing tools. Proven ability to lead interdisciplinary projects from concept to prototype across biomedical and environmental domains. Strong technical skills in embedded programming, physiological modeling, and data analysis, with published research and applied results in high-impact projects.",
+        "Biomedical Engineer and co-founder focused on data analytics and deployable solutions. I lead end-to-end delivery across problem definition, requirements, data integration/cleaning, feature engineering, model training and validation, and production deployment—aligning stakeholders, timelines, and measurable outcomes. I work with Python, SQL, MATLAB, and C/C++, combining rapid prototyping with quality standards and performance measurement. I also have experience teaching machine learning and programming at the university level.",
     },
     experience: {
       title: "Experience",
       items: [
         {
-          role: "Co-founder — Product Developer & Data Analyst",
+          role: "Co-Founder | Product Developer & Data Analyst",
           dates: "May 2024 — Present",
           org: "Quanttrace, Buenos Aires, Argentina",
           bullets: [
-            "Startup focused on non-invasive, real-time sensing technologies (biomedical and environmental)",
-            "R&D, systems architecture, and AI analytics to bring lab-grade tools to field solutions",
-            "Portable devices with sensing, visualization, and data logging",
-            "AI models (neural networks, genetic algorithms) for signal classification and trend detection",
+            "Delivered portable prototypes integrating sensing, UI/display, and data logging to enable on-site acquisition and faster iteration cycles.",
+            "Built and tuned AI models (neural networks, genetic algorithms) for signal classification and trend detection, improving robustness on noisy field data.",
+            "Implemented low-latency acquisition and analysis pipelines in MATLAB, Python, and C/C++ to support real-time feedback and reliability.",
+            "Standardized modular codebases, automated analysis routines, and testing workflows to increase repeatability and reduce iteration time.",
+            "Owned end-to-end delivery from requirements to validation; defined acceptance criteria and performance metrics to guide releases."
+          ],
+        },
+        {
+          role: "Teaching Assistant – Introduction to Machine Learning",
+          dates: "Jul 2025 — Present",
+          org: "UNSAM",
+          bullets: [
+            "Deliver theoretical and practical classes on regression, classification, clustering, and neural networks, integrating theory with applied Python examples.",
+            "Guide students through model implementation, validation, and tuning, promoting good programming and modelling practices.",
+            "Contribute to the development and update of course materials, and support the grading of assignments and exams."
           ],
         },
         {
           role: "Project Engineer",
           dates: "Jul 2024 — Apr 2025",
-          org: "Neuroengineering Lab (ITECA/ECyT-UNSAM)",
+          org: "Neuroengineering Laboratory (ITECA/ECyT-UNSAM)",
           bullets: [
-            "Functional system for automatic myocardial ischemia detection using ECG + AI",
-            "Neural network trained/validated with high sensitivity/specificity",
-            "Multichannel preprocessing and extraction of temporal/morphological features",
+            "Trained and validated a custom neural network under realistic testing conditions using defined clinical metrics.",
+            "Engineered preprocessing pipelines to extract temporal and morphological features from multichannel signals, improving diagnostic reliability.",
+            "Deployed the trained model to embedded hardware by converting it to optimized C code with live screen and LED feedback.",
+            "Evaluated performance and documented results for reproducibility and usability in point-of-care scenarios.",
+            "Prioritized portability, low power, and an intuitive user interface to support real-world feasibility."
           ],
         },
         {
           role: "P.E.F.I. Fellow",
           dates: "Feb 2023 — Jul 2024",
-          org: "Neuroengineering Lab (ITECA/ECyT-UNSAM)",
+          org: "Neuroengineering Laboratory (ITECA/ECyT-UNSAM)",
           bullets: [
-            "Enhancement/validation of a spike-sorting tool (collaboration with FLENI)",
-            "Wavelets + genetic algorithms; improved multi-dataset accuracy/robustness",
-            "Adaptation to intraoperative data for DBS (target validation)",
-            "Coauthor in Advances in Neuroengineering (Springer) and SABI 2023 presentation",
-            "Implementation in MATLAB and C#, UI and visualization improvements",
+            "Enhanced an existing spike classification pipeline using wavelet decomposition and genetic algorithms, increasing accuracy and robustness across datasets.",
+            "Collaborated with clinicians at FLENI to adapt the system for intraoperative data, supporting deep brain stimulation (DBS) target validation.",
+            "Co-authored a peer-reviewed publication in Springer Nature's “Advances in Neuroengineering” and presented results at the Argentine Congress of Bioengineering (SABI 2023).",
+            "Implemented and tested algorithm components in MATLAB and C#, improving data visualization and UI responsiveness across sessions."
           ],
         },
         {
-          role: "Administrative Assistant — Ethics Committee",
+          role: "Administrative Assistant - Ethics Committee",
           dates: "May 2021 — Present",
           org: "Fundación CIDEA",
           bullets: [
-            "Operational support for the Institutional Ethics Committee: regulatory compliance, document integrity, coordination with ANMAT and the Ministry of Health",
-            "Management of submissions, amendments, approvals, and records",
-            "Minutes and reports; coordination with investigators and sponsors",
+            "Managed ethics submissions, amendments, and approvals for clinical protocols, ensuring documentation integrity and audit readiness.",
+            "Coordinated investigators and sponsors to ensure timely documentation and transparent communication throughout review cycles.",
+            "Liaised with regulatory bodies including ANMAT and the Ministry of Health to facilitate inspections, audits, and procedural alignment.",
+            "Drafted and organized meeting minutes and evaluation reports, contributing to procedural clarity and traceability."
           ],
         },
         {
-          role: "Internship — Medical Technology",
+          role: "Medical Technology Field Technician Intern",
           dates: "Sep 2023 — Dec 2023",
-          org: "Hospital Universitario Austral",
+          org: "Austral University Hospital",
           bullets: [
-            "Support for Biomedical Engineering in operation/inspection/maintenance of equipment",
-            "Preventive maintenance, troubleshooting, documentation, and cross-functional work",
+            "Performed routine checks and preventive maintenance under supervision, ensuring compliance with safety and performance standards.",
+            "Assisted in diagnosing and resolving technical issues in medical devices, contributing to faster equipment turnaround.",
+            "Documented service reports and collaborated with clinical and technical teams to prioritize interventions based on patient care needs.",
+            "Gained practical understanding of hospital workflows, equipment regulations, and quality control protocols."
           ],
         },
         {
-          role: "Teaching Assistant (Computer Science)",
+          role: "Assistant Teaching Fellow in Computer Science",
           dates: "Aug 2020 — Feb 2023",
+          org: "National University of San Martín (UNSAM)",
+          bullets: [
+            "Guided students through problem-solving sessions in C, reinforcing core concepts in logic, control structures, and data handling.",
+            "Reviewed and graded assignments and exams, delivering constructive feedback to support student growth and understanding.",
+            "Contributed to the development and refinement of course materials, improving clarity and accessibility for diverse student backgrounds.",
+            "Fostered a collaborative, inclusive environment that encouraged critical thinking and active engagement with computational challenges."
+          ],
+        },
+        {
+          role: "Academic Leadership & Mentorship",
+          dates: "Various",
           org: "UNSAM",
           bullets: [
-            "Theoretical/practical support in C programming, grading, and improvement of teaching materials",
+            "Co-supervisor for an Electronic Engineering capstone project: provided methodological and technical guidance, defined objectives and milestones, and reviewed documentation and deliverables.",
+            "Supervisor for a PEFI scholarship project: mentored the work plan, coordinated tasks and timeline, evaluated progress, and supported technical reporting."
           ],
-        },
+        }
       ],
     },
     projects: {
@@ -119,10 +146,12 @@ const resume = {
     skills: {
       title: "Skills",
       groups: [
-        { name: "Programming", chips: ["MATLAB", "Python", "C", "C++", "C#", "SQL"], color: "blue" },
-        { name: "ML / AI", chips: ["Neural networks", "Genetic algorithms", "Classification"], color: "green" },
-        { name: "Embedded", chips: ["Data acquisition", "Real time", "Firmware"], color: "purple" },
-        { name: "Tools", chips: ["Visual Studio", "Arduino IDE", "Simulink"], color: "orange" },
+        { name: "Programming", chips: ["Python", "MATLAB", "C", "C++", "C#", "SQL"], color: "blue" },
+        { name: "Data & ML", chips: ["ETL", "Feature engineering", "Time-series analysis", "Model training", "Experiment tracking"], color: "green" },
+        { name: "Machine Learning", chips: ["Neural networks", "Genetic algorithms", "Classification", "Model selection"], color: "green" },
+        { name: "Embedded Systems", chips: ["Real-time acquisition", "Firmware", "Sensor integration", "Low-latency processing"], color: "purple" },
+        { name: "Project & Delivery", chips: ["Requirements", "Stakeholders", "Documentation", "Risk management", "KPI/Metrics"], color: "orange" },
+        { name: "Tools", chips: ["Visual Studio", "Arduino IDE", "Simulink", "Android Studio"], color: "orange" },
       ],
     },
     publications: {
@@ -148,20 +177,14 @@ const resume = {
       title: "Education",
       items: [
         {
-          degree: "Biomedical Engineer",
+          degree: "Biomedical Engineer (Master-level)",
           dates: "Feb 2018 — Apr 2025",
           org: "UNSAM",
           details: [
-            "GPA: 8.21/10",
-            "Final project (10/10): Portable system for automatic myocardial ischemia detection using ECG + neural networks",
+            "GPA: 8.21 / 10",
+            "Final project (10/10): Portable system for automatic myocardial ischemia detection using ECG and neural networks",
           ],
-        },
-        {
-          degree: "High School — Exact and Natural Sciences",
-          dates: "2017",
-          org: "Colegio Esquiú",
-          details: [],
-        },
+        }
       ],
     },
     contact: { title: "Contact" },
@@ -202,7 +225,7 @@ const resume = {
     hero: {
       headline:
         "Cofundador || Desarrollador de Producto & Analista de Datos || Ingeniero Biomédico",
-      location: "Ciudad de Buenos Aires, Argentina",
+      location: "Buenos Aires, Argentina",
       ctaCV: "Descargar CV",
       ctaContact: "Contactar",
       photoAlt: "Retrato de Federico Alscher",
@@ -211,20 +234,31 @@ const resume = {
     about: {
       title: "Sobre mí",
       text:
-        "Ingeniero biomédico y cofundador, especializado en el desarrollo de sistemas de diagnóstico basados en inteligencia artificial y herramientas de procesamiento de señales en tiempo real. Demostrada capacidad para liderar proyectos interdisciplinarios desde el concepto hasta el prototipo, en los ámbitos biomédico y ambiental. Sólidas competencias técnicas en programación embebida, modelado fisiológico y análisis de datos, con investigaciones publicadas y resultados aplicados en proyectos de alto impacto.",
+        "Ingeniero Biomédico y cofundador con enfoque en analítica y modelado de datos, orientado a transformar datos en decisiones y soluciones implementables. Lidero proyectos de punta a punta: definición del problema, levantamiento de requerimientos, integración/limpieza de datos, feature engineering, entrenamiento y validación de modelos, y puesta en producción—alineando stakeholders, cronogramas y resultados medibles. Trabajo con Python, SQL, MATLAB y C/C++, combinando rapidez de prototipado con criterios de calidad y medición de desempeño. Además, cuento con experiencia en docencia universitaria en aprendizaje automático y programación.",
     },
     experience: {
       title: "Experiencia",
       items: [
         {
-          role: "Cofundador — Desarrollador de Productos y Analista de Datos",
+          role: "Cofundador | Desarrollador de Producto & Analista de Datos",
           dates: "May 2024 — Presente",
           org: "Quanttrace, Buenos Aires, Argentina",
           bullets: [
-            "Startup dedicada al desarrollo de tecnologías de sensado no invasivo y en tiempo real (biomédico y ambiental)",
-            "I+D, arquitectura de sistemas y analítica con IA para llevar herramientas de laboratorio a soluciones de campo",
-            "Dispositivos portátiles con sensado, visualización y registro de datos",
-            "Modelos de IA (redes neuronales, algoritmos genéticos) para clasificación de señales y detección de tendencias",
+            "Entregué prototipos portátiles integrando sensado, visualización/interfaz y registro de datos para habilitar adquisición in situ y ciclos de iteración más rápidos.",
+            "Desarrollé y ajusté modelos de IA (redes neuronales, algoritmos genéticos) para clasificación de señales y detección de tendencias, mejorando la robustez ante datos ruidosos de campo.",
+            "Implementé pipelines de adquisición y análisis de baja latencia en MATLAB, Python y C/C++ para retroalimentación en tiempo real y alta confiabilidad.",
+            "Estandaricé bases de código modulares, rutinas automatizadas de análisis y flujos de prueba para aumentar repetibilidad y reducir tiempos de iteración.",
+            "Lideré entregas end-to-end desde requerimientos hasta validación; definí criterios de aceptación y métricas de desempeño para guiar releases."
+          ],
+        },
+        {
+          role: "Ayudante de Cátedra – Introducción al Aprendizaje Automático",
+          dates: "Jul 2025 — Presente",
+          org: "UNSAM",
+          bullets: [
+            "Dicto clases teóricas y prácticas sobre regresión, clasificación, clustering y redes neuronales, integrando teoría con ejemplos aplicados en Python.",
+            "Guío a estudiantes en implementación, validación y ajuste de modelos, promoviendo buenas prácticas de programación y modelado.",
+            "Colaboro en la elaboración/actualización de material docente y en la corrección de trabajos prácticos y exámenes."
           ],
         },
         {
@@ -232,9 +266,11 @@ const resume = {
           dates: "Jul 2024 — Abr 2025",
           org: "Laboratorio de Neuroingeniería (ITECA/ECyT-UNSAM)",
           bullets: [
-            "Sistema funcional para detección automática de isquemia miocárdica con ECG + IA",
-            "Red neuronal entrenada/validada con alta sensibilidad/especificidad",
-            "Preprocesamiento y extracción de rasgos temporales/morfológicos multicanal",
+            "Entrené y validé una red neuronal personalizada bajo condiciones de prueba realistas utilizando métricas clínicas definidas.",
+            "Diseñé pipelines de preprocesamiento para extraer características temporales y morfológicas de señales multicanal, mejorando la confiabilidad diagnóstica.",
+            "Desplegué el modelo en hardware embebido convirtiéndolo a código C optimizado con feedback en tiempo real mediante pantalla y LEDs.",
+            "Evalué desempeño y documenté resultados para reproducibilidad y usabilidad en escenarios de atención directa.",
+            "Priorizé portabilidad, bajo consumo e interfaz de usuario intuitiva para viabilidad en aplicaciones reales."
           ],
         },
         {
@@ -242,40 +278,54 @@ const resume = {
           dates: "Feb 2023 — Jul 2024",
           org: "Laboratorio de Neuroingeniería (ITECA/ECyT-UNSAM)",
           bullets: [
-            "Mejora/validación de herramienta de spike sorting (colaboración FLENI)",
-            "Wavelets + algoritmos genéticos; aumento de precisión/robustez multiconjunto",
-            "Adaptación a datos intraoperatorios para DBS (validación de blancos)",
-            "Coautor en Advances in Neuroengineering (Springer) y presentación SABI 2023",
-            "Implementación en MATLAB y C#, mejoras de UI y visualización",
+            "Mejoré un pipeline existente de clasificación de spikes utilizando descomposición wavelet y algoritmos genéticos, aumentando precisión y robustez entre datasets.",
+            "Colaboré con clínicos de FLENI para adaptar el sistema a datos intraoperatorios, apoyando validación de blancos para estimulación cerebral profunda (DBS).",
+            "Coautor de una publicación revisada por pares en “Advances in Neuroengineering” (Springer Nature) y presentación en el Congreso Argentino de Bioingeniería (SABI 2023).",
+            "Implementé y probé componentes en MATLAB y C#, mejorando visualización de datos y respuesta de la interfaz durante sesiones."
           ],
         },
         {
-          role: "Asistente Administrativo — Comité de Ética",
+          role: "Asistente Administrativo – Comité de Ética",
           dates: "May 2021 — Presente",
           org: "Fundación CIDEA",
           bullets: [
-            "Soporte operativo del CEI: cumplimiento normativo, integridad documental, coordinación con ANMAT y Min. de Salud",
-            "Gestión de presentaciones, enmiendas, aprobaciones y registros",
-            "Actas e informes; coordinación con investigadores y patrocinadores",
+            "Gestioné presentaciones, enmiendas y aprobaciones de protocolos clínicos, asegurando integridad documental y preparación para auditorías.",
+            "Coordiné investigadores y patrocinadores para garantizar documentación oportuna y comunicación transparente durante los ciclos de revisión.",
+            "Actué como enlace con organismos reguladores (ANMAT, Ministerio de Salud) facilitando inspecciones, auditorías y alineación de procedimientos.",
+            "Redacté y organicé actas de reuniones e informes de evaluación, contribuyendo a claridad y trazabilidad de los procesos."
           ],
         },
         {
-          role: "Pasantía — Tecnología Médica",
+          role: "Pasante en Tecnología Médica",
           dates: "Sep 2023 — Dic 2023",
           org: "Hospital Universitario Austral",
           bullets: [
-            "Soporte a Ingeniería Biomédica en operación/inspección/mantenimiento de equipamiento",
-            "Mantenimiento preventivo, diagnóstico de fallas, documentación y trabajo interdisciplinario",
+            "Realicé controles rutinarios y mantenimiento preventivo bajo supervisión, asegurando cumplimiento de estándares de seguridad y desempeño.",
+            "Asistí en diagnóstico y resolución de fallas técnicas en dispositivos médicos, contribuyendo a reducir tiempos de inactividad.",
+            "Documenté reportes de servicio y coordiné con equipos clínicos y técnicos la priorización de intervenciones según necesidades asistenciales.",
+            "Adquirí comprensión práctica de flujos hospitalarios, normativas de equipamiento y protocolos de control de calidad."
           ],
         },
         {
-          role: "Ayudante de Cátedra (Informática)",
+          role: "Ayudante de Cátedra en Informática",
           dates: "Ago 2020 — Feb 2023",
-          org: "UNSAM",
+          org: "Universidad Nacional de San Martín (UNSAM)",
           bullets: [
-            "Apoyo teórico/práctico en programación en C, correcciones y mejora de materiales docentes",
+            "Guié a estudiantes en sesiones de resolución de problemas en C, reforzando lógica, estructuras de control y manejo de datos.",
+            "Revisé y califiqué trabajos prácticos y exámenes, brindando retroalimentación constructiva para apoyar comprensión y progreso.",
+            "Contribuí al desarrollo y mejora de materiales del curso, aumentando claridad y accesibilidad para distintos perfiles.",
+            "Fomenté un entorno colaborativo e inclusivo que estimuló pensamiento crítico y participación activa frente a desafíos computacionales."
           ],
         },
+        {
+          role: "Dirección y Tutoría Académica",
+          dates: "Varios",
+          org: "UNSAM",
+          bullets: [
+            "Co-director de Proyecto Final (Ing. Electrónica): acompañamiento metodológico y técnico, definición de objetivos e hitos, revisión de documentación y entregables.",
+            "Director / Tutor de Beca PEFI: tutoría y seguimiento del plan de trabajo, coordinación de tareas y cronograma, evaluación de avances y soporte documentario."
+          ],
+        }
       ],
     },
     projects: {
@@ -301,10 +351,12 @@ const resume = {
     skills: {
       title: "Habilidades",
       groups: [
-        { name: "Programación", chips: ["MATLAB", "Python", "C", "C++", "C#", "SQL"], color: "blue" },
-        { name: "ML/IA", chips: ["Redes neuronales", "Algoritmos genéticos", "Clasificación"], color: "green" },
-        { name: "Embebidos", chips: ["Adquisición de datos", "Tiempo real", "Firmware"], color: "purple" },
-        { name: "Herramientas", chips: ["Visual Studio", "Arduino IDE", "Simulink"], color: "orange" },
+        { name: "Programación", chips: ["Python", "MATLAB", "C", "C++", "C#", "SQL"], color: "blue" },
+        { name: "Datos & ML", chips: ["ETL", "Feature engineering", "Series temporales", "Entrenamiento", "Métricas de desempeño", "Trazabilidad"], color: "green" },
+        { name: "Machine Learning", chips: ["Redes neuronales", "Algoritmos genéticos", "Clasificación", "Ajuste de modelos"], color: "green" },
+        { name: "Sistemas embebidos", chips: ["Adquisición en tiempo real", "Firmware", "Sensores", "Baja latencia"], color: "purple" },
+        { name: "Gestión & Entregas", chips: ["Requerimientos", "Stakeholders", "Documentación", "Riesgos", "KPI/métricas"], color: "orange" },
+        { name: "Herramientas", chips: ["Visual Studio", "Arduino IDE", "Simulink", "Android Studio"], color: "orange" },
       ],
     },
     publications: {
@@ -330,20 +382,14 @@ const resume = {
       title: "Educación",
       items: [
         {
-          degree: "Ingeniero Biomédico",
+          degree: "Ingeniero Biomédico (Grado y Maestría)",
           dates: "Feb 2018 — Abr 2025",
           org: "UNSAM",
           details: [
-            "GPA: 8,21/10",
-            "Proyecto final (10/10): Sistema portátil para detección automática de isquemia miocárdica usando ECG + redes neuronales",
+            "Promedio general: 8,21 / 10",
+            "Proyecto final (10/10): Sistema portátil para detección automática de isquemia miocárdica usando ECG y redes neuronales",
           ],
-        },
-        {
-          degree: "Bachiller en Cs. Exactas y Naturales",
-          dates: "2017",
-          org: "Colegio Esquiú",
-          details: [],
-        },
+        }
       ],
     },
     contact: { title: "Contacto" },
