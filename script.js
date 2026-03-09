@@ -19,6 +19,7 @@ const resume = {
     hero: {
       headline: "Co-founder || Product Developer & Data Analyst || Biomedical Engineer",
       location: "Buenos Aires, Argentina",
+      status: "Open to opportunities",
       ctaCV: "Download CV",
       ctaContact: "Contact",
       photoAlt: "Portrait of Federico Alscher",
@@ -26,14 +27,14 @@ const resume = {
     },
     about: {
       title: "About",
-      text: "Biomedical Engineer and co-founder focused on data analytics and deployable solutions. I lead end-to-end delivery across problem definition, requirements, data integration/cleaning, feature engineering, model training and validation, and production deployment—aligning stakeholders, timelines, and measurable outcomes. I work with Python, SQL, MATLAB, and C/C++, combining rapid prototyping with quality standards and performance measurement. I also have experience teaching machine learning and programming at the university level.",
+      text: "Biomedical Engineer and co-founder focused on data analytics and deployable solutions. I lead end-to-end delivery across problem definition, requirements, data integration/cleaning, feature engineering, model training and validation, and production deployment\u2014aligning stakeholders, timelines, and measurable outcomes. I work with Python, SQL, MATLAB, and C/C++, combining rapid prototyping with quality standards and performance measurement. I also have experience teaching machine learning and programming at the university level.",
     },
     experience: {
       title: "Experience",
       items: [
         {
           role: "Co-Founder | Product Developer & Data Analyst",
-          dates: "May 2024 — Present",
+          dates: "May 2024 \u2014 Present",
           org: "Quanttrace, Buenos Aires, Argentina",
           description: "Co-founded a startup developing non-invasive, real-time sensing technologies for biomedical and environmental monitoring. Contributed across R&D, systems architecture, and AI-based analytics to bring lab-grade tools into field-ready formats.",
           bullets: [
@@ -45,9 +46,9 @@ const resume = {
           ]
         },
         {
-          role: "Teaching Assistant – Introduction to Machine Learning",
-          dates: "Jul 2025 — Present",
-          org: "National University of San Martín (UNSAM)",
+          role: "Teaching Assistant \u2013 Introduction to Machine Learning",
+          dates: "Jul 2025 \u2014 Present",
+          org: "National University of San Mart\u00edn (UNSAM)",
           description: "I participate in the theoretical and practical instruction of the course Introduction to Machine Learning, covering topics such as data preprocessing, linear and logistic regression, classification, clustering, basic neural networks, and model selection.",
           bullets: [
             "Deliver theoretical and practical classes on regression, classification, clustering, and neural networks, integrating theory with applied Python examples.",
@@ -57,9 +58,9 @@ const resume = {
         },
         {
           role: "Project Engineer",
-          dates: "Jul 2024 — Apr 2025",
+          dates: "Jul 2024 \u2014 Apr 2025",
           org: "Neuroengineering Laboratory (ITECA/ECyT-UNSAM)",
-          description: "Designed and built a fully functional system for automatic detection of myocardial ischemia using ECG signals and AI — integrating signal processing, machine learning, and embedded implementation.",
+          description: "Designed and built a fully functional system for automatic detection of myocardial ischemia using ECG signals and AI \u2014 integrating signal processing, machine learning, and embedded implementation.",
           bullets: [
             "Trained and validated a custom neural network under realistic testing conditions using defined clinical metrics.",
             "Engineered preprocessing pipelines to extract temporal and morphological features from multichannel signals, improving diagnostic reliability.",
@@ -70,21 +71,21 @@ const resume = {
         },
         {
           role: "P.E.F.I. Fellow",
-          dates: "Feb 2023 — Jul 2024",
+          dates: "Feb 2023 \u2014 Jul 2024",
           org: "Neuroengineering Laboratory (ITECA/ECyT-UNSAM)",
-          description: "Joined an interdisciplinary research team to improve and validate an AI-based spike sorting tool for analyzing neural recordings — a collaborative project with FLENI aimed at enhancing surgical planning for movement disorders.",
+          description: "Joined an interdisciplinary research team to improve and validate an AI-based spike sorting tool for analyzing neural recordings \u2014 a collaborative project with FLENI aimed at enhancing surgical planning for movement disorders.",
           bullets: [
             "Enhanced an existing spike classification pipeline using wavelet decomposition and genetic algorithms, increasing accuracy and robustness across datasets.",
             "Collaborated with clinicians at FLENI to adapt the system for intraoperative data, supporting deep brain stimulation (DBS) target validation.",
-            "Co-authored a peer-reviewed publication in Springer Nature's “Advances in Neuroengineering” and presented results at the Argentine Congress of Bioengineering (SABI 2023).",
+            "Co-authored a peer-reviewed publication in Springer Nature\u2019s \u201cAdvances in Neuroengineering\u201d and presented results at the Argentine Congress of Bioengineering (SABI 2023).",
             "Implemented and tested algorithm components in MATLAB and C#, improving data visualization and UI responsiveness across sessions."
           ]
         },
         {
           role: "Administrative Assistant - Ethics Committee",
-          dates: "May 2021 — Present",
-          org: "Fundación CIDEA",
-          description: "Supported the operations of the Institutional Ethics Committee at Fundación CIDEA, a clinical research organization conducting biomedical studies in both public and private sectors. Ensured regulatory compliance, documentation integrity, and coordination with national health authorities.",
+          dates: "May 2021 \u2014 Present",
+          org: "Fundaci\u00f3n CIDEA",
+          description: "Supported the operations of the Institutional Ethics Committee at Fundaci\u00f3n CIDEA, a clinical research organization conducting biomedical studies in both public and private sectors. Ensured regulatory compliance, documentation integrity, and coordination with national health authorities.",
           bullets: [
             "Managed ethics submissions, amendments, and approvals for clinical protocols, ensuring documentation integrity and audit readiness.",
             "Coordinated investigators and sponsors to ensure timely documentation and transparent communication throughout review cycles.",
@@ -94,7 +95,7 @@ const resume = {
         },
         {
           role: "Medical Technology Field Technician Intern",
-          dates: "Sep 2023 — Dec 2023",
+          dates: "Sep 2023 \u2014 Dec 2023",
           org: "Austral University Hospital",
           description: "Completed a professional internship supporting the Biomedical Engineering Department in the operation, inspection, and maintenance of medical equipment across critical care and outpatient areas.",
           bullets: [
@@ -106,8 +107,8 @@ const resume = {
         },
         {
           role: "Assistant Teaching Fellow in Computer Science",
-          dates: "Aug 2020 — Feb 2023",
-          org: "National University of San Martín",
+          dates: "Aug 2020 \u2014 Feb 2023",
+          org: "National University of San Mart\u00edn",
           description: "Provided academic support for an undergraduate course in computer science, assisting in both theoretical instruction and practical coding workshops. Collaborated closely with faculty to enhance learning outcomes in programming fundamentals and algorithmic thinking.",
           bullets: [
             "Guided students through problem-solving sessions in C, reinforcing core concepts in logic, control structures, and data handling.",
@@ -151,13 +152,13 @@ const resume = {
       items: [
         {
           title: "Algorithm and validation method for spike sorting based on wavelet analysis and a genetic algorithm",
-          venue: "Alscher, F. et al. — SABI 2023, Springer",
+          venue: "Alscher, F. et al. \u2014 SABI 2023, Springer",
           doiUrl: "https://doi.org/10.1007/978-3-031-61973-1_7",
           doiText: "DOI: 10.1007/978-3-031-61973-1_7",
         },
         {
-          title: "Neurophysiological Analysis of the Posterior Subthalamic Area in a Patient with Holmes' Tremor",
-          venue: "Wlken, M. et al. — Movement Disorders, 2024",
+          title: "Neurophysiological Analysis of the Posterior Subthalamic Area in a Patient with Holmes\u2019 Tremor",
+          venue: "Wlken, M. et al. \u2014 Movement Disorders, 2024",
           doiUrl: "https://doi.org/10.1002/mds.29705",
           doiText: "DOI: 10.1002/mds.29705",
         }
@@ -168,8 +169,8 @@ const resume = {
       items: [
         {
           degree: "Biomedical Engineer",
-          dates: "Feb 2018 — Apr 2025",
-          org: "National University of San Martín",
+          dates: "Feb 2018 \u2014 Apr 2025",
+          org: "National University of San Mart\u00edn",
           details: [
             "Final project (graded 10/10): Portable system for automatic myocardial ischemia detection using ECG and neural networks.",
             "GPA: 8.21 / 10",
@@ -189,14 +190,14 @@ const resume = {
 
   es: {
     meta: {
-      title: "Federico Alscher | Ingeniero Biomédico & Desarrollador",
-      description: "Ingeniero biomédico y cofundador especializado en desarrollo de sistemas de diagnóstico con IA y procesamiento de señales en tiempo real.",
+      title: "Federico Alscher | Ingeniero Biom\u00e9dico & Desarrollador",
+      description: "Ingeniero biom\u00e9dico y cofundador especializado en desarrollo de sistemas de diagn\u00f3stico con IA y procesamiento de se\u00f1ales en tiempo real.",
     },
     nav: {
       about: "Perfil",
       experience: "Exp Laboral",
-      leadership: "Dirección",
-      education: "Educación",
+      leadership: "Direcci\u00f3n",
+      education: "Educaci\u00f3n",
       skills: "Habilidades",
       publications: "Publicaciones",
       contact: "Contacto",
@@ -204,8 +205,9 @@ const resume = {
       rights: "Todos los derechos reservados.",
     },
     hero: {
-      headline: "Cofundador || Desarrollador de Producto & Analista de Datos || Ingeniero Biomédico",
+      headline: "Cofundador || Desarrollador de Producto & Analista de Datos || Ingeniero Biom\u00e9dico",
       location: "Buenos Aires, Argentina",
+      status: "Abierto a oportunidades",
       ctaCV: "Descargar CV",
       ctaContact: "Contactar",
       photoAlt: "Retrato de Federico Alscher",
@@ -213,123 +215,123 @@ const resume = {
     },
     about: {
       title: "Perfil",
-      text: "Ingeniero Biomédico y cofundador con enfoque en analítica y modelado de datos, orientado a transformar datos en decisiones y soluciones implementables. Lidero proyectos de punta a punta: definición del problema, levantamiento de requerimientos, integración/limpieza de datos, feature engineering, entrenamiento y validación de modelos, y puesta en producción—alineando stakeholders, cronogramas y resultados medibles. Trabajo con Python, SQL, MATLAB y C/C++, combinando rapidez de prototipado con criterios de calidad y medición de desempeño. Además, cuento con experiencia en docencia universitaria en aprendizaje automático y programación.",
+      text: "Ingeniero Biom\u00e9dico y cofundador con enfoque en anal\u00edtica y modelado de datos, orientado a transformar datos en decisiones y soluciones implementables. Lidero proyectos de punta a punta: definici\u00f3n del problema, levantamiento de requerimientos, integraci\u00f3n/limpieza de datos, feature engineering, entrenamiento y validaci\u00f3n de modelos, y puesta en producci\u00f3n\u2014alineando stakeholders, cronogramas y resultados medibles. Trabajo con Python, SQL, MATLAB y C/C++, combinando rapidez de prototipado con criterios de calidad y medici\u00f3n de desempe\u00f1o. Adem\u00e1s, cuento con experiencia en docencia universitaria en aprendizaje autom\u00e1tico y programaci\u00f3n.",
     },
     experience: {
       title: "Experiencia Laboral",
       items: [
         {
           role: "Cofundador | Desarrollador de Producto & Analista de Datos",
-          dates: "Mayo 2024 — Presente",
+          dates: "Mayo 2024 \u2014 Presente",
           org: "Quanttrace, Buenos Aires, Argentina",
-          description: "Cofundé una startup dedicada al desarrollo de tecnologías de sensado no invasivo y en tiempo real para monitoreo biomédico y ambiental. Contribuí en investigación y desarrollo (I+D), arquitectura de sistemas y análisis basado en inteligencia artificial para transformar herramientas de laboratorio en soluciones listas para campo.",
+          description: "Cofund\u00e9 una startup dedicada al desarrollo de tecnolog\u00edas de sensado no invasivo y en tiempo real para monitoreo biom\u00e9dico y ambiental. Contribu\u00ed en investigaci\u00f3n y desarrollo (I+D), arquitectura de sistemas y an\u00e1lisis basado en inteligencia artificial para transformar herramientas de laboratorio en soluciones listas para campo.",
           bullets: [
-            "Entregué prototipos portátiles integrando sensado, visualización/interfaz y registro de datos para habilitar adquisición in situ y ciclos de iteración más rápidos.",
-            "Desarrollé y ajusté modelos de IA (redes neuronales, algoritmos genéticos) para clasificación de señales y detección de tendencias, mejorando la robustez ante datos ruidosos de campo.",
-            "Implementé pipelines de adquisición y análisis de baja latencia en MATLAB, Python y C/C++ para retroalimentación en tiempo real y alta confiabilidad.",
-            "Estandaricé bases de código modulares, rutinas automatizadas de análisis y flujos de prueba para aumentar repetibilidad y reducir tiempos de iteración.",
-            "Lideré entregas end-to-end desde requerimientos hasta validación; definí criterios de aceptación y métricas de desempeño para guiar releases."
+            "Entregu\u00e9 prototipos port\u00e1tiles integrando sensado, visualizaci\u00f3n/interfaz y registro de datos para habilitar adquisici\u00f3n in situ y ciclos de iteraci\u00f3n m\u00e1s r\u00e1pidos.",
+            "Desarroll\u00e9 y ajust\u00e9 modelos de IA (redes neuronales, algoritmos gen\u00e9ticos) para clasificaci\u00f3n de se\u00f1ales y detecci\u00f3n de tendencias, mejorando la robustez ante datos ruidosos de campo.",
+            "Implement\u00e9 pipelines de adquisici\u00f3n y an\u00e1lisis de baja latencia en MATLAB, Python y C/C++ para retroalimentaci\u00f3n en tiempo real y alta confiabilidad.",
+            "Estandaric\u00e9 bases de c\u00f3digo modulares, rutinas automatizadas de an\u00e1lisis y flujos de prueba para aumentar repetibilidad y reducir tiempos de iteraci\u00f3n.",
+            "Lider\u00e9 entregas end-to-end desde requerimientos hasta validaci\u00f3n; defin\u00ed criterios de aceptaci\u00f3n y m\u00e9tricas de desempe\u00f1o para guiar releases."
           ]
         },
         {
-          role: "Ayudante de Cátedra – Introducción al Aprendizaje Automático",
-          dates: "Julio 2025 — Presente",
-          org: "Universidad Nacional de San Martín (UNSAM)",
-          description: "Participo en el dictado teórico y práctico de la materia Introducción al Aprendizaje Automático, cubriendo preprocesamiento de datos, regresión lineal y logística, clasificación, clustering, redes neuronales básicas y selección de modelos.",
+          role: "Ayudante de C\u00e1tedra \u2013 Introducci\u00f3n al Aprendizaje Autom\u00e1tico",
+          dates: "Julio 2025 \u2014 Presente",
+          org: "Universidad Nacional de San Mart\u00edn (UNSAM)",
+          description: "Participo en el dictado te\u00f3rico y pr\u00e1ctico de la materia Introducci\u00f3n al Aprendizaje Autom\u00e1tico, cubriendo preprocesamiento de datos, regresi\u00f3n lineal y log\u00edstica, clasificaci\u00f3n, clustering, redes neuronales b\u00e1sicas y selecci\u00f3n de modelos.",
           bullets: [
-            "Dicto clases teóricas y prácticas sobre regresión, clasificación, clustering y redes neuronales, integrando teoría con ejemplos aplicados en Python.",
-            "Guío a estudiantes en implementación, validación y ajuste de modelos, promoviendo buenas prácticas de programación y modelado.",
-            "Colaboro en la elaboración/actualización de material docente y en la corrección de trabajos prácticos y exámenes."
+            "Dicto clases te\u00f3ricas y pr\u00e1cticas sobre regresi\u00f3n, clasificaci\u00f3n, clustering y redes neuronales, integrando teor\u00eda con ejemplos aplicados en Python.",
+            "Gu\u00edo a estudiantes en implementaci\u00f3n, validaci\u00f3n y ajuste de modelos, promoviendo buenas pr\u00e1cticas de programaci\u00f3n y modelado.",
+            "Colaboro en la elaboraci\u00f3n/actualizaci\u00f3n de material docente y en la correcci\u00f3n de trabajos pr\u00e1cticos y ex\u00e1menes."
           ]
         },
         {
           role: "Ingeniero de Proyecto",
-          dates: "Julio 2024 — Abril 2025",
-          org: "Laboratorio de Neuroingeniería (ITECA/ECyT-UNSAM)",
-          description: "Diseñé y desarrollé un sistema completamente funcional para la detección automática de isquemia miocárdica usando señales de ECG e inteligencia artificial, integrando procesamiento de señales, aprendizaje automático e implementación embebida.",
+          dates: "Julio 2024 \u2014 Abril 2025",
+          org: "Laboratorio de Neuroingenier\u00eda (ITECA/ECyT-UNSAM)",
+          description: "Dise\u00f1\u00e9 y desarroll\u00e9 un sistema completamente funcional para la detecci\u00f3n autom\u00e1tica de isquemia mioc\u00e1rdica usando se\u00f1ales de ECG e inteligencia artificial, integrando procesamiento de se\u00f1ales, aprendizaje autom\u00e1tico e implementaci\u00f3n embebida.",
           bullets: [
-            "Entrené y validé una red neuronal personalizada bajo condiciones de prueba realistas utilizando métricas clínicas definidas.",
-            "Diseñé pipelines de preprocesamiento para extraer características temporales y morfológicas de señales multicanal, mejorando la confiabilidad diagnóstica.",
-            "Desplegué el modelo en hardware embebido convirtiéndolo a código C optimizado con feedback en tiempo real mediante pantalla y LEDs.",
-            "Evalué desempeño y documenté resultados para reproducibilidad y usabilidad en escenarios de atención directa.",
-            "Priorizé portabilidad, bajo consumo e interfaz de usuario intuitiva para viabilidad en aplicaciones reales."
+            "Entren\u00e9 y valid\u00e9 una red neuronal personalizada bajo condiciones de prueba realistas utilizando m\u00e9tricas cl\u00ednicas definidas.",
+            "Dise\u00f1\u00e9 pipelines de preprocesamiento para extraer caracter\u00edsticas temporales y morfol\u00f3gicas de se\u00f1ales multicanal, mejorando la confiabilidad diagn\u00f3stica.",
+            "Despleg\u00e9 el modelo en hardware embebido convirti\u00e9ndolo a c\u00f3digo C optimizado con feedback en tiempo real mediante pantalla y LEDs.",
+            "Evalu\u00e9 desempe\u00f1o y document\u00e9 resultados para reproducibilidad y usabilidad en escenarios de atenci\u00f3n directa.",
+            "Prioriz\u00e9 portabilidad, bajo consumo e interfaz de usuario intuitiva para viabilidad en aplicaciones reales."
           ]
         },
         {
           role: "Becario P.E.F.I.",
-          dates: "Febrero 2023 — Julio 2024",
-          org: "Laboratorio de Neuroingeniería (ITECA/ECyT-UNSAM)",
-          description: "Me incorporé a un equipo de investigación interdisciplinario para mejorar y validar una herramienta de clasificación de spikes basada en inteligencia artificial para el análisis de registros neuronales, en un proyecto colaborativo con FLENI orientado a optimizar la planificación quirúrgica en trastornos del movimiento.",
+          dates: "Febrero 2023 \u2014 Julio 2024",
+          org: "Laboratorio de Neuroingenier\u00eda (ITECA/ECyT-UNSAM)",
+          description: "Me incorpor\u00e9 a un equipo de investigaci\u00f3n interdisciplinario para mejorar y validar una herramienta de clasificaci\u00f3n de spikes basada en inteligencia artificial para el an\u00e1lisis de registros neuronales, en un proyecto colaborativo con FLENI orientado a optimizar la planificaci\u00f3n quir\u00fargica en trastornos del movimiento.",
           bullets: [
-            "Mejoré un pipeline existente de clasificación de spikes utilizando descomposición wavelet y algoritmos genéticos, aumentando precisión y robustez entre datasets.",
-            "Colaboré con clínicos de FLENI para adaptar el sistema a datos intraoperatorios, apoyando validación de blancos para estimulación cerebral profunda (DBS).",
-            "Coautor de una publicación revisada por pares en “Advances in Neuroengineering” (Springer Nature) y presentación en el Congreso Argentino de Bioingeniería (SABI 2023).",
-            "Implementé y probé componentes en MATLAB y C#, mejorando visualización de datos y respuesta de la interfaz durante sesiones."
+            "Mejor\u00e9 un pipeline existente de clasificaci\u00f3n de spikes utilizando descomposici\u00f3n wavelet y algoritmos gen\u00e9ticos, aumentando precisi\u00f3n y robustez entre datasets.",
+            "Colabor\u00e9 con cl\u00ednicos de FLENI para adaptar el sistema a datos intraoperatorios, apoyando validaci\u00f3n de blancos para estimulaci\u00f3n cerebral profunda (DBS).",
+            "Coautor de una publicaci\u00f3n revisada por pares en \u201cAdvances in Neuroengineering\u201d (Springer Nature) y presentaci\u00f3n en el Congreso Argentino de Bioingenier\u00eda (SABI 2023).",
+            "Implement\u00e9 y prob\u00e9 componentes en MATLAB y C#, mejorando visualizaci\u00f3n de datos y respuesta de la interfaz durante sesiones."
           ]
         },
         {
-          role: "Asistente Administrativo – Comité de Ética",
-          dates: "Mayo 2021 — Presente",
-          org: "Fundación CIDEA",
-          description: "Apoyé las operaciones del Comité de Ética Institucional de la Fundación CIDEA, una organización de investigación clínica que realiza estudios biomédicos en los sectores público y privado. Aseguré el cumplimiento normativo, la integridad documental y la coordinación con autoridades sanitarias nacionales.",
+          role: "Asistente Administrativo \u2013 Comit\u00e9 de \u00c9tica",
+          dates: "Mayo 2021 \u2014 Presente",
+          org: "Fundaci\u00f3n CIDEA",
+          description: "Apoy\u00e9 las operaciones del Comit\u00e9 de \u00c9tica Institucional de la Fundaci\u00f3n CIDEA, una organizaci\u00f3n de investigaci\u00f3n cl\u00ednica que realiza estudios biom\u00e9dicos en los sectores p\u00fablico y privado. Asegur\u00e9 el cumplimiento normativo, la integridad documental y la coordinaci\u00f3n con autoridades sanitarias nacionales.",
           bullets: [
-            "Gestioné presentaciones, enmiendas y aprobaciones de protocolos clínicos, asegurando integridad documental y preparación para auditorías.",
-            "Coordiné investigadores y patrocinadores para garantizar documentación oportuna y comunicación transparente durante los ciclos de revisión.",
-            "Actué como enlace con organismos reguladores (ANMAT, Ministerio de Salud) facilitando inspecciones, auditorías y alineación de procedimientos.",
-            "Redacté y organicé actas de reuniones e informes de evaluación, contribuyendo a claridad y trazabilidad de los procesos."
+            "Gestion\u00e9 presentaciones, enmiendas y aprobaciones de protocolos cl\u00ednicos, asegurando integridad documental y preparaci\u00f3n para auditor\u00edas.",
+            "Coordin\u00e9 investigadores y patrocinadores para garantizar documentaci\u00f3n oportuna y comunicaci\u00f3n transparente durante los ciclos de revisi\u00f3n.",
+            "Actu\u00e9 como enlace con organismos reguladores (ANMAT, Ministerio de Salud) facilitando inspecciones, auditor\u00edas y alineaci\u00f3n de procedimientos.",
+            "Redact\u00e9 y organiz\u00e9 actas de reuniones e informes de evaluaci\u00f3n, contribuyendo a claridad y trazabilidad de los procesos."
           ]
         },
         {
-          role: "Pasante en Tecnología Médica",
-          dates: "Septiembre 2023 — Diciembre 2023",
+          role: "Pasante en Tecnolog\u00eda M\u00e9dica",
+          dates: "Septiembre 2023 \u2014 Diciembre 2023",
           org: "Hospital Universitario Austral",
-          description: "Realicé una pasantía profesional brindando apoyo al Departamento de Ingeniería Biomédica en la operación, inspección y mantenimiento de equipamiento médico en áreas de cuidados críticos y ambulatorios.",
+          description: "Realic\u00e9 una pasant\u00eda profesional brindando apoyo al Departamento de Ingenier\u00eda Biom\u00e9dica en la operaci\u00f3n, inspecci\u00f3n y mantenimiento de equipamiento m\u00e9dico en \u00e1reas de cuidados cr\u00edticos y ambulatorios.",
           bullets: [
-            "Realicé controles rutinarios y mantenimiento preventivo bajo supervisión, asegurando cumplimiento de estándares de seguridad y desempeño.",
-            "Asistí en diagnóstico y resolución de fallas técnicas en dispositivos médicos, contribuyendo a reducir tiempos de inactividad.",
-            "Documenté reportes de servicio y coordiné con equipos clínicos y técnicos la priorización de intervenciones según necesidades asistenciales.",
-            "Adquirí comprensión práctica de flujos hospitalarios, normativas de equipamiento y protocolos de control de calidad."
+            "Realic\u00e9 controles rutinarios y mantenimiento preventivo bajo supervisi\u00f3n, asegurando cumplimiento de est\u00e1ndares de seguridad y desempe\u00f1o.",
+            "Asist\u00ed en diagn\u00f3stico y resoluci\u00f3n de fallas t\u00e9cnicas en dispositivos m\u00e9dicos, contribuyendo a reducir tiempos de inactividad.",
+            "Document\u00e9 reportes de servicio y coordin\u00e9 con equipos cl\u00ednicos y t\u00e9cnicos la priorizaci\u00f3n de intervenciones seg\u00fan necesidades asistenciales.",
+            "Adquir\u00ed comprensi\u00f3n pr\u00e1ctica de flujos hospitalarios, normativas de equipamiento y protocolos de control de calidad."
           ]
         },
         {
-          role: "Ayudante de Cátedra en Informática",
-          dates: "Agosto 2020 — Febrero 2023",
-          org: "Universidad Nacional de San Martín",
-          description: "Brindé apoyo académico en un curso de grado en informática, asistiendo en la instrucción teórica y en talleres prácticos de programación, colaborando con el equipo docente para mejorar resultados de aprendizaje.",
+          role: "Ayudante de C\u00e1tedra en Inform\u00e1tica",
+          dates: "Agosto 2020 \u2014 Febrero 2023",
+          org: "Universidad Nacional de San Mart\u00edn",
+          description: "Brind\u00e9 apoyo acad\u00e9mico en un curso de grado en inform\u00e1tica, asistiendo en la instrucci\u00f3n te\u00f3rica y en talleres pr\u00e1cticos de programaci\u00f3n, colaborando con el equipo docente para mejorar resultados de aprendizaje.",
           bullets: [
-            "Guié a estudiantes en sesiones de resolución de problemas en C, reforzando lógica, estructuras de control y manejo de datos.",
-            "Revisé y califiqué trabajos prácticos y exámenes, brindando retroalimentación constructiva para apoyar comprensión y progreso.",
-            "Contribuí al desarrollo y mejora de materiales del curso, aumentando claridad y accesibilidad para distintos perfiles.",
-            "Fomenté un entorno colaborativo e inclusivo que estimuló pensamiento crítico y participación activa frente a desafíos computacionales."
+            "Gui\u00e9 a estudiantes en sesiones de resoluci\u00f3n de problemas en C, reforzando l\u00f3gica, estructuras de control y manejo de datos.",
+            "Revis\u00e9 y califiqu\u00e9 trabajos pr\u00e1cticos y ex\u00e1menes, brindando retroalimentaci\u00f3n constructiva para apoyar comprensi\u00f3n y progreso.",
+            "Contribu\u00ed al desarrollo y mejora de materiales del curso, aumentando claridad y accesibilidad para distintos perfiles.",
+            "Foment\u00e9 un entorno colaborativo e inclusivo que estimul\u00f3 pensamiento cr\u00edtico y participaci\u00f3n activa frente a desaf\u00edos computacionales."
           ]
         }
       ]
     },
     leadership: {
-      title: "Dirección y Tutoría",
+      title: "Direcci\u00f3n y Tutor\u00eda",
       items: [
         {
-          role: "Co-director de Proyecto Final (Ing. Electrónica)",
+          role: "Co-director de Proyecto Final (Ing. Electr\u00f3nica)",
           dates: "UNSAM",
           org: "",
-          description: "Acompañamiento metodológico y técnico, definición de objetivos e hitos, revisión de documentación y entregables hasta la presentación final."
+          description: "Acompa\u00f1amiento metodol\u00f3gico y t\u00e9cnico, definici\u00f3n de objetivos e hitos, revisi\u00f3n de documentaci\u00f3n y entregables hasta la presentaci\u00f3n final."
         },
         {
           role: "Director / Tutor de Beca PEFI",
           dates: "UNSAM",
           org: "",
-          description: "Tutoría y seguimiento del plan de trabajo, coordinación de tareas y cronograma, evaluación de avances y soporte en la redacción de informes y resultados."
+          description: "Tutor\u00eda y seguimiento del plan de trabajo, coordinaci\u00f3n de tareas y cronograma, evaluaci\u00f3n de avances y soporte en la redacci\u00f3n de informes y resultados."
         }
       ]
     },
     skills: {
-      title: "Habilidades Técnicas",
+      title: "Habilidades T\u00e9cnicas",
       groups: [
-        { name: "Programación", chips: ["Python", "MATLAB", "C", "C++", "C#", "SQL"], color: "blue" },
-        { name: "Datos & ML", chips: ["ETL", "Feature engineering", "Series temporales", "Entrenamiento", "Métricas de desempeño", "Trazabilidad"], color: "green" },
-        { name: "Machine Learning", chips: ["Redes neuronales", "Algoritmos genéticos", "Clasificación", "Ajuste de modelos"], color: "green" },
-        { name: "Sistemas embebidos", chips: ["Adquisición en tiempo real", "Firmware", "Sensores", "Baja latencia"], color: "purple" },
-        { name: "Gestión & Entregas", chips: ["Requerimientos", "Stakeholders", "Documentación", "Riesgos", "KPI/métricas"], color: "orange" },
+        { name: "Programaci\u00f3n", chips: ["Python", "MATLAB", "C", "C++", "C#", "SQL"], color: "blue" },
+        { name: "Datos & ML", chips: ["ETL", "Feature engineering", "Series temporales", "Entrenamiento", "M\u00e9tricas de desempe\u00f1o", "Trazabilidad"], color: "green" },
+        { name: "Machine Learning", chips: ["Redes neuronales", "Algoritmos gen\u00e9ticos", "Clasificaci\u00f3n", "Ajuste de modelos"], color: "green" },
+        { name: "Sistemas embebidos", chips: ["Adquisici\u00f3n en tiempo real", "Firmware", "Sensores", "Baja latencia"], color: "purple" },
+        { name: "Gesti\u00f3n & Entregas", chips: ["Requerimientos", "Stakeholders", "Documentaci\u00f3n", "Riesgos", "KPI/m\u00e9tricas"], color: "orange" },
         { name: "Herramientas", chips: ["Visual Studio", "Arduino IDE", "Simulink", "Android Studio"], color: "orange" },
       ]
     },
@@ -338,27 +340,27 @@ const resume = {
       items: [
         {
           title: "Algorithm and validation method for spike sorting based on wavelet analysis and a genetic algorithm",
-          venue: "Alscher, F. et al. — SABI 2023, Springer",
+          venue: "Alscher, F. et al. \u2014 SABI 2023, Springer",
           doiUrl: "https://doi.org/10.1007/978-3-031-61973-1_7",
           doiText: "DOI: 10.1007/978-3-031-61973-1_7",
         },
         {
-          title: "Neurophysiological Analysis of the Posterior Subthalamic Area in a Patient with Holmes' Tremor",
-          venue: "Wlken, M. et al. — Movement Disorders, 2024",
+          title: "Neurophysiological Analysis of the Posterior Subthalamic Area in a Patient with Holmes\u2019 Tremor",
+          venue: "Wlken, M. et al. \u2014 Movement Disorders, 2024",
           doiUrl: "https://doi.org/10.1002/mds.29705",
           doiText: "DOI: 10.1002/mds.29705",
         }
       ]
     },
     education: {
-      title: "Educación",
+      title: "Educaci\u00f3n",
       items: [
         {
-          degree: "Ingeniero Biomédico",
-          dates: "Febrero 2018 — Abril 2025",
-          org: "Universidad Nacional de San Martín",
+          degree: "Ingeniero Biom\u00e9dico",
+          dates: "Febrero 2018 \u2014 Abril 2025",
+          org: "Universidad Nacional de San Mart\u00edn",
           details: [
-            "Proyecto final (calificado con 10/10): “Sistema portátil para detección automática de isquemia miocárdica”.",
+            "Proyecto final (calificado con 10/10): \u201cSistema port\u00e1til para detecci\u00f3n autom\u00e1tica de isquemia mioc\u00e1rdica\u201d.",
             "Promedio general: 8,21 / 10",
           ]
         }
@@ -368,9 +370,9 @@ const resume = {
     contactForm: {
       modalTitle: "Contacto",
       labels: { name: "Nombre", email: "Mail", message: "Mensaje" },
-      placeholders: { name: "Tu nombre", email: "vos@email.com", message: "Escribí tu mensaje..." },
+      placeholders: { name: "Tu nombre", email: "vos@email.com", message: "Escrib\u00ed tu mensaje..." },
       buttons: { cancel: "Cancelar", send: "Enviar" },
-      feedback: { sending: "Enviando...", success: "¡Gracias! Tu mensaje fue enviado.", error: "Uy, algo falló. Probá de nuevo." },
+      feedback: { sending: "Enviando...", success: "\u00a1Gracias! Tu mensaje fue enviado.", error: "Uy, algo fall\u00f3. Prob\u00e1 de nuevo." },
     }
   }
 };
@@ -378,15 +380,24 @@ const resume = {
 /* ====== helpers ====== */
 const byId = (id) => document.getElementById(id);
 
-function chipClasses(color) {
-  // Map semantic color to Tailwind classes
+function chipColorClass(color) {
   const map = {
-    blue: { bg: "bg-blue-100", text: "text-blue-800" },
-    green: { bg: "bg-green-100", text: "text-green-800" },
-    purple: { bg: "bg-purple-100", text: "text-purple-800" },
-    orange: { bg: "bg-orange-100", text: "text-orange-800" },
+    blue: "chip-blue",
+    green: "chip-green",
+    purple: "chip-purple",
+    orange: "chip-orange",
   };
   return map[color] || map.blue;
+}
+
+function skillIconSvg(color) {
+  const icons = {
+    blue: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>',
+    green: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>',
+    purple: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>',
+    orange: '<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>',
+  };
+  return icons[color] || icons.blue;
 }
 
 function setMeta(meta) {
@@ -394,7 +405,6 @@ function setMeta(meta) {
   const desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute("content", meta.description);
 }
-
 
 function buildMailto({ locale }) {
   const to = "fede.alscher@gmail.com";
@@ -404,15 +414,12 @@ function buildMailto({ locale }) {
       : "Inquiry from your website";
   const body =
     locale === "es"
-      ? "Hola Federico,%0D%0A%0D%0AEstuve viendo tu sitio y me gustaría contactarte por..."
+      ? "Hola Federico,%0D%0A%0D%0AEstuve viendo tu sitio y me gustar\u00eda contactarte por..."
       : "Hi Federico,%0D%0A%0D%0AI was checking your site and I'd like to reach out about...";
-
-  // OJO: usamos encodeURIComponent si armás strings dinámicos.
   return `mailto:${to}?subject=${subject}&body=${body}`;
 }
 
-
-// === Config: pegá tu endpoint real de Formspree acá ===
+// === Config: Formspree endpoint ===
 const FORM_ENDPOINT = "https://formspree.io/f/mnngqplr";
 
 function currentLocale() {
@@ -420,16 +427,13 @@ function currentLocale() {
 }
 
 function applyContactFormTexts(t) {
-  // Títulos/labels
   byId("contact-modal-title").textContent = t.contactForm.modalTitle;
   byId("cf-label-name").textContent = t.contactForm.labels.name;
   byId("cf-label-email").textContent = t.contactForm.labels.email;
   byId("cf-label-message").textContent = t.contactForm.labels.message;
-  // Placeholders
   byId("cf-name").placeholder = t.contactForm.placeholders.name;
   byId("cf-email").placeholder = t.contactForm.placeholders.email;
   byId("cf-message").placeholder = t.contactForm.placeholders.message;
-  // Botones
   byId("cf-cancel").textContent = t.contactForm.buttons.cancel;
   byId("cf-send").textContent = t.contactForm.buttons.send;
 }
@@ -484,12 +488,14 @@ function renderHero(t) {
   byId("cta-contact-label").textContent = t.hero.ctaContact;
   byId("cta-cv").setAttribute("href", t.hero.cvHref);
 
-  // >>> Aca agregamos el mailto con idioma <<<
+  const statusEl = byId("hero-status");
+  if (statusEl && t.hero.status) statusEl.textContent = t.hero.status;
+
   const locale = document.documentElement.getAttribute("lang") === "es" ? "es" : "en";
   const mailto = buildMailto({ locale });
   const contactBtn = byId("cta-contact");
   contactBtn.setAttribute("href", mailto);
-  contactBtn.removeAttribute("target"); // que use el cliente del sistema
+  contactBtn.removeAttribute("target");
 
   const img = byId("hero-photo");
   img.alt = t.hero.photoAlt;
@@ -504,30 +510,39 @@ function renderExperience(t) {
   byId("experience-title").textContent = t.experience.title;
   const wrap = byId("experience-list");
   wrap.innerHTML = "";
-  t.experience.items.forEach((it) => {
-    const card = document.createElement("div");
-    card.className = "bg-white p-6 rounded-xl shadow-md";
-    card.setAttribute("data-aos", "fade-up");
+  t.experience.items.forEach((it, i) => {
+    const item = document.createElement("div");
+    item.className = "timeline-item";
+    item.setAttribute("data-aos", "fade-up");
+    item.setAttribute("data-aos-delay", String(i * 50));
 
-    let bulletsHtml = it.bullets && it.bullets.length ? `<ul class="list-disc list-inside space-y-2 text-slate-700 mt-4">${it.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>` : '';
-    let descriptionHtml = it.description ? `<p class="text-slate-700 mt-2 leading-relaxed font-medium">${it.description}</p>` : '';
+    let bulletsHtml = it.bullets && it.bullets.length
+      ? `<ul class="space-y-2 mt-4">${it.bullets.map((b) =>
+          `<li class="flex items-start text-slate-600 text-sm leading-relaxed">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary-400 mt-2 mr-3 shrink-0"></span>
+            <span>${b}</span>
+          </li>`
+        ).join("")}</ul>`
+      : '';
 
-    card.innerHTML = `
-      <div class="flex justify-between items-start mb-2">
-        <h3 class="text-xl font-semibold">${it.role}</h3>
-        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm shrink-0 ml-4">${it.dates}</span>
+    let descriptionHtml = it.description
+      ? `<p class="text-slate-600 mt-3 leading-relaxed text-[0.95rem]">${it.description}</p>`
+      : '';
+
+    item.innerHTML = `
+      <div class="card-experience">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
+          <h3 class="font-heading text-lg font-600 text-primary-900">${it.role}</h3>
+          <span class="date-badge">${it.dates}</span>
+        </div>
+        <p class="text-accent-600 text-sm font-medium">${it.org}</p>
+        ${descriptionHtml}
+        ${bulletsHtml}
       </div>
-      <p class="text-blue-600 mb-2 font-medium">${it.org}</p>
-      ${descriptionHtml}
-      ${bulletsHtml}
     `;
-    wrap.appendChild(card);
+    wrap.appendChild(item);
   });
 }
-
-
-
-
 
 function renderLeadership(t) {
   const titleEl = byId("leadership-title");
@@ -535,16 +550,17 @@ function renderLeadership(t) {
   titleEl.textContent = t.leadership.title;
   const wrap = byId("leadership-list");
   wrap.innerHTML = "";
-  t.leadership.items.forEach((it) => {
+  t.leadership.items.forEach((it, i) => {
     const card = document.createElement("div");
-    card.className = "bg-slate-50 p-6 rounded-xl shadow-md";
+    card.className = "card-leadership";
     card.setAttribute("data-aos", "fade-up");
+    card.setAttribute("data-aos-delay", String(i * 100));
     card.innerHTML = `
-      <div class="flex justify-between items-start mb-2">
-        <h3 class="text-xl font-semibold">${it.role}</h3>
-        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">${it.dates}</span>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+        <h3 class="font-heading text-lg font-600 text-primary-900">${it.role}</h3>
+        <span class="date-badge">${it.dates}</span>
       </div>
-      <p class="text-slate-700 mt-2">${it.description}</p>
+      <p class="text-slate-600 leading-relaxed text-[0.95rem]">${it.description}</p>
     `;
     wrap.appendChild(card);
   });
@@ -554,18 +570,29 @@ function renderSkills(t) {
   byId("skills-title").textContent = t.skills.title;
   const grid = byId("skills-grid");
   grid.innerHTML = "";
-  t.skills.groups.forEach((g) => {
-    const { bg, text } = chipClasses(g.color);
+  t.skills.groups.forEach((g, i) => {
+    const colorClass = chipColorClass(g.color);
     const col = document.createElement("div");
+    col.className = "card-skill";
+    col.setAttribute("data-color", g.color);
     col.setAttribute("data-aos", "fade-up");
+    col.setAttribute("data-aos-delay", String(i * 80));
+
+    const iconColorMap = {
+      blue: "text-primary-600",
+      green: "text-emerald-600",
+      purple: "text-violet-600",
+      orange: "text-accent-600",
+    };
+    const iconColor = iconColorMap[g.color] || iconColorMap.blue;
+
     col.innerHTML = `
-      <h3 class="text-lg font-semibold mb-4 text-blue-600">${g.name}</h3>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="${iconColor}">${skillIconSvg(g.color)}</div>
+        <h3 class="font-heading text-base font-600 text-slate-800">${g.name}</h3>
+      </div>
       <div class="flex flex-wrap gap-2">
-        ${g.chips
-        .map(
-          (c) => `<span class="${bg} ${text} px-3 py-1 rounded-full">${c}</span>`
-        )
-        .join("")}
+        ${g.chips.map((c) => `<span class="chip ${colorClass}">${c}</span>`).join("")}
       </div>
     `;
     grid.appendChild(col);
@@ -576,15 +603,16 @@ function renderPublications(t) {
   byId("publications-title").textContent = t.publications.title;
   const list = byId("publications-list");
   list.innerHTML = "";
-  t.publications.items.forEach((p) => {
+  t.publications.items.forEach((p, i) => {
     const card = document.createElement("div");
-    card.className = "bg-slate-50 p-6 rounded-xl";
+    card.className = "card-publication";
     card.setAttribute("data-aos", "fade-up");
+    card.setAttribute("data-aos-delay", String(i * 100));
     card.innerHTML = `
-      <h3 class="text-lg font-semibold mb-2">${p.title}</h3>
-      <p class="text-slate-600 mb-3">${p.venue}</p>
-      <a href="${p.doiUrl}" class="text-blue-600 hover:underline flex items-center" target="_blank" rel="noopener">
-        <i data-feather="external-link" class="mr-2"></i>
+      <h3 class="font-heading text-base font-600 text-primary-900 mb-2 leading-snug">${p.title}</h3>
+      <p class="text-slate-500 text-sm mb-3">${p.venue}</p>
+      <a href="${p.doiUrl}" class="inline-flex items-center text-primary-600 hover:text-accent-600 text-sm font-medium transition-colors group" target="_blank" rel="noopener">
+        <i data-feather="external-link" class="mr-2 w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
         ${p.doiText}
       </a>
     `;
@@ -596,20 +624,26 @@ function renderEducation(t) {
   byId("education-title").textContent = t.education.title;
   const list = byId("education-list");
   list.innerHTML = "";
-  t.education.items.forEach((e) => {
+  t.education.items.forEach((e, i) => {
     const card = document.createElement("div");
-    card.className = "bg-white p-6 rounded-xl shadow-md";
+    card.className = "card-education";
     card.setAttribute("data-aos", "fade-up");
+    card.setAttribute("data-aos-delay", String(i * 100));
     const details =
       e.details && e.details.length
-        ? `<p class="text-slate-600 mt-2">${e.details.join("<br/>")}</p>`
+        ? `<div class="mt-4 space-y-2">${e.details.map(d =>
+            `<p class="flex items-start text-slate-600 text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 mr-3 shrink-0"></span>
+              <span>${d}</span>
+            </p>`
+          ).join("")}</div>`
         : "";
     card.innerHTML = `
-      <div class="flex justify-between items-start mb-4">
-        <h3 class="text-xl font-semibold">${e.degree}</h3>
-        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">${e.dates}</span>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+        <h3 class="font-heading text-xl font-600 text-primary-900">${e.degree}</h3>
+        <span class="date-badge">${e.dates}</span>
       </div>
-      <p class="text-blue-600 mb-2">${e.org}</p>
+      <p class="text-accent-600 font-medium text-sm">${e.org}</p>
       ${details}
     `;
     list.appendChild(card);
@@ -620,17 +654,43 @@ function renderContact(t) {
   byId("contact-title").textContent = t.contact.title;
 }
 
+/* ====== Scroll Progress Bar ====== */
+function setupScrollProgress() {
+  const bar = byId("scroll-progress");
+  if (!bar) return;
+  window.addEventListener("scroll", () => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    bar.style.width = progress + "%";
+  }, { passive: true });
+}
+
+/* ====== Active Nav Highlighting ====== */
+function setupActiveNav() {
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      }
+    });
+  }, { rootMargin: "-20% 0px -75% 0px" });
+
+  sections.forEach((section) => observer.observe(section));
+}
+
 /* ====== main render ====== */
 function render(locale) {
   const t = resume[locale] || resume.en;
 
-  // Update html lang
   document.documentElement.setAttribute("lang", locale === "es" ? "es" : "en");
-
-  // Meta
   setMeta(t.meta);
-
-  // Sections
 
   renderNav(t);
   renderHero(t);
@@ -643,11 +703,9 @@ function render(locale) {
   renderContact(t);
   applyContactFormTexts(t);
 
-  // Enhance UI
-  if (window.AOS) AOS.init({ duration: 800, once: true });
+  if (window.AOS) AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
   if (window.feather) feather.replace();
 
-  // Current year
   const yearEl = byId("current-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
@@ -659,6 +717,15 @@ function setupInteractions() {
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
+    });
+  }
+
+  // Close mobile menu when clicking a link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
     });
   }
 
@@ -674,22 +741,21 @@ function setupInteractions() {
   if (btn) btn.addEventListener("click", switchLocale);
   if (mbtn) mbtn.addEventListener("click", () => {
     switchLocale();
-    // Close mobile menu after switching
     if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
       mobileMenu.classList.add("hidden");
     }
   });
 
-  // Abrir modal al hacer click en el botón del hero
+  // Open contact modal from hero CTA
   const contactBtn = byId("cta-contact");
   if (contactBtn) {
     contactBtn.addEventListener("click", (e) => {
-      e.preventDefault(); // evita navegar
+      e.preventDefault();
       openContactModal();
     });
   }
 
-  // Cerrar modal: botón X, Cancelar, click en el fondo, tecla ESC
+  // Close modal handlers
   const modal = byId("contact-modal");
   const closeBtn = byId("contact-close");
   const cancelBtn = byId("cf-cancel");
@@ -700,7 +766,7 @@ function setupInteractions() {
 
   if (modal) {
     modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeContactModal(); // clic fuera de la caja
+      if (e.target === modal) closeContactModal();
     });
   }
 
@@ -708,7 +774,7 @@ function setupInteractions() {
     if (e.key === "Escape") closeContactModal();
   });
 
-  // Enviar formulario a Formspree
+  // Submit form to Formspree
   const form = byId("contact-form");
   if (form) {
     form.addEventListener("submit", async (e) => {
@@ -734,7 +800,6 @@ function setupInteractions() {
           fb.classList.remove("text-slate-700");
           fb.classList.add("text-green-700");
           fb.textContent = t.contactForm.feedback.success;
-          // opcional: cerrar a los 1.2s
           setTimeout(closeContactModal, 1200);
         } else {
           throw new Error("Form submit failed");
@@ -746,13 +811,13 @@ function setupInteractions() {
       }
     });
   }
-
 }
 
 /* ====== boot ====== */
 document.addEventListener("DOMContentLoaded", () => {
-  // Choose default locale: saved → else EN
   const saved = localStorage.getItem("locale") || "en";
   render(saved);
   setupInteractions();
+  setupScrollProgress();
+  setupActiveNav();
 });

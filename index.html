@@ -9,70 +9,98 @@
     content="Biomedical engineer and co-founder specialized in AI-powered diagnostic systems and real-time signal processing." />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-  <!-- Tailwind + Fonts + AOS + Feather -->
+  <!-- Tailwind + Config -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: { 50: '#FFFBF5', 100: '#FEF3E2' },
+            primary: {
+              50: '#F0FDFA', 100: '#CCFBF1', 200: '#99F6E4',
+              300: '#5EEAD4', 400: '#2DD4BF', 500: '#14B8A6',
+              600: '#0D9488', 700: '#0F766E', 800: '#115E59', 900: '#134E4A',
+            },
+            accent: {
+              50: '#FFF7ED', 100: '#FFEDD5', 200: '#FED7AA',
+              300: '#FDBA74', 400: '#FB923C', 500: '#F97316',
+              600: '#EA580C', 700: '#C2410C',
+            },
+          },
+          fontFamily: {
+            heading: ['Syne', 'system-ui', 'sans-serif'],
+            body: ['DM Sans', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- AOS + Feather -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-  <!-- Fallback si AOS no carga (muestra igual el contenido) -->
-  <style>
-    [data-aos] {
-      opacity: 1 !important;
-      transform: none !important;
-    }
-  </style>
+  <!-- Fallback AOS -->
+  <style>[data-aos]{opacity:1!important;transform:none!important}</style>
 
-  <!-- (Opcional) tu styles.css si lo usás -->
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 
-<body class="font-inter bg-gradient-to-br from-slate-50 to-blue-50 text-slate-800">
+<body class="font-body bg-cream-50 text-slate-800 overflow-x-hidden">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-primary-600 via-primary-400 to-accent-500 z-[60] transition-all duration-150" style="width: 0%"></div>
+
   <!-- Header / Nav -->
-  <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#home" class="text-2xl font-bold text-blue-600">Federico Alscher</a>
+  <header class="fixed w-full bg-cream-50/80 backdrop-blur-md border-b border-primary-800/5 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-6xl">
+      <a href="#home" class="font-heading text-2xl font-800 tracking-tight text-primary-800 hover:text-primary-600 transition-colors">
+        FA<span class="text-accent-500">.</span>
+      </a>
 
-      <div class="hidden md:flex items-center space-x-6">
-                <a id="nav-about" href="#about" class="hover:text-blue-600 transition-colors">About</a>
-        <a id="nav-experience" href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
-        <a id="nav-leadership" href="#leadership" class="hover:text-blue-600 transition-colors">Leadership</a>
-        <a id="nav-education" href="#education" class="hover:text-blue-600 transition-colors">Education</a>
-        <a id="nav-skills" href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
-        <a id="nav-publications" href="#publications" class="hover:text-blue-600 transition-colors">Publications</a>
-        <a id="nav-contact" href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a id="nav-about" href="#about" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">About</a>
+        <a id="nav-experience" href="#experience" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Experience</a>
+        <a id="nav-leadership" href="#leadership" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Leadership</a>
+        <a id="nav-education" href="#education" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Education</a>
+        <a id="nav-skills" href="#skills" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Skills</a>
+        <a id="nav-publications" href="#publications" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Publications</a>
+        <a id="nav-contact" href="#contact" class="nav-link text-sm font-medium uppercase tracking-widest text-slate-500 hover:text-primary-700 transition-colors">Contact</a>
 
-        <!-- Language toggle -->
         <button id="lang-toggle"
-          class="flex items-center space-x-1 px-3 py-1 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+          class="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-primary-800 text-white text-xs font-semibold uppercase tracking-wider hover:bg-primary-700 transition-colors"
           aria-label="Change language">
-          <i data-feather="globe" class="w-4 h-4"></i>
+          <i data-feather="globe" class="w-3.5 h-3.5"></i>
           <span id="lang-label">EN</span>
         </button>
       </div>
 
       <!-- Mobile menu button -->
-      <button id="menu-btn" class="md:hidden" aria-label="Open menu">
+      <button id="menu-btn" class="md:hidden text-primary-800" aria-label="Open menu">
         <i data-feather="menu"></i>
       </button>
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white p-6 shadow-lg">
-      <div class="flex flex-col space-y-4">
-                <a id="mnav-about" href="#about" class="hover:text-blue-600">About</a>
-        <a id="mnav-experience" href="#experience" class="hover:text-blue-600">Experience</a>
-        <a id="mnav-leadership" href="#leadership" class="hover:text-blue-600">Leadership</a>
-        <a id="mnav-education" href="#education" class="hover:text-blue-600">Education</a>
-        <a id="mnav-skills" href="#skills" class="hover:text-blue-600">Skills</a>
-        <a id="mnav-publications" href="#publications" class="hover:text-blue-600">Publications</a>
-        <a id="mnav-contact" href="#contact" class="hover:text-blue-600">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-cream-50/95 backdrop-blur-lg border-t border-primary-800/5 px-6 py-8">
+      <div class="flex flex-col space-y-5">
+        <a id="mnav-about" href="#about" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">About</a>
+        <a id="mnav-experience" href="#experience" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Experience</a>
+        <a id="mnav-leadership" href="#leadership" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Leadership</a>
+        <a id="mnav-education" href="#education" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Education</a>
+        <a id="mnav-skills" href="#skills" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Skills</a>
+        <a id="mnav-publications" href="#publications" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Publications</a>
+        <a id="mnav-contact" href="#contact" class="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-primary-700">Contact</a>
         <button id="mlang-toggle"
-          class="flex items-center justify-center space-x-2 px-3 py-2 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors"
+          class="flex items-center justify-center space-x-2 px-4 py-2.5 rounded-full bg-primary-800 text-white text-xs font-semibold uppercase tracking-wider hover:bg-primary-700 transition-colors w-fit"
           aria-label="Change language">
-          <i data-feather="globe" class="w-4 h-4"></i>
+          <i data-feather="globe" class="w-3.5 h-3.5"></i>
           <span id="mlang-label">EN</span>
         </button>
       </div>
@@ -81,105 +109,151 @@
 
   <main>
     <!-- Hero -->
-    <section id="home" class="min-h-screen flex items-center pt-24 pb-16">
-      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div data-aos="fade-right">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4">Federico Alscher</h1>
-          <!-- Texto por defecto (si JS no corre) -->
-          <h2 id="hero-headline" class="text-xl md:text-2xl text-blue-600 mb-6">
+    <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="hero-dot-grid"></div>
+      <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-primary-200/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-20 left-0 w-[400px] h-[400px] bg-accent-200/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="container mx-auto px-6 max-w-6xl grid md:grid-cols-5 gap-12 items-center relative z-10">
+        <div class="md:col-span-3" data-aos="fade-right" data-aos-duration="1000">
+          <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary-100/60 border border-primary-200/40 text-primary-700 text-sm font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-primary-500 mr-2 animate-pulse"></span>
+            <span id="hero-status">Open to opportunities</span>
+          </div>
+
+          <h1 class="font-heading text-5xl md:text-7xl font-800 tracking-tight mb-4 leading-[0.95]">
+            <span class="text-primary-900">Federico</span><br />
+            <span class="gradient-text">Alscher</span>
+          </h1>
+
+          <h2 id="hero-headline" class="text-lg md:text-xl text-slate-500 font-body font-normal mb-4 max-w-xl leading-relaxed">
             Co-founder || Product Developer & Data Analyst || Biomedical Engineer
           </h2>
-          <p class="text-lg text-slate-600 mb-8 flex items-center">
-            <i data-feather="map-pin" class="mr-2"></i>
-            <span id="hero-location">Buenos Aires City, Argentina</span>
+
+          <p class="text-base text-slate-400 mb-8 flex items-center">
+            <i data-feather="map-pin" class="mr-2 w-4 h-4 text-accent-500"></i>
+            <span id="hero-location">Buenos Aires, Argentina</span>
           </p>
+
           <div class="flex flex-wrap gap-4">
             <a id="cta-cv" href="assets/CV_FedericoAlscher_EN.pdf" download
-              class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
-              <i data-feather="download" class="mr-2"></i>
+              class="group bg-primary-800 text-white px-7 py-3.5 rounded-full hover:bg-primary-700 transition-all duration-300 flex items-center font-medium text-sm shadow-lg shadow-primary-800/20 hover:shadow-xl hover:shadow-primary-800/30 hover:-translate-y-0.5">
+              <i data-feather="download" class="mr-2 w-4 h-4 group-hover:animate-bounce"></i>
               <span id="cta-cv-label">Download CV</span>
             </a>
             <a id="cta-contact" href="mailto:fede.alscher@gmail.com"
-              class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors flex items-center">
-              <i data-feather="mail" class="mr-2"></i>
+              class="group border-2 border-primary-800 text-primary-800 px-7 py-3.5 rounded-full hover:bg-primary-800 hover:text-white transition-all duration-300 flex items-center font-medium text-sm hover:-translate-y-0.5">
+              <i data-feather="mail" class="mr-2 w-4 h-4"></i>
               <span id="cta-contact-label">Contact</span>
             </a>
           </div>
         </div>
-        <div data-aos="fade-left" class="flex justify-center">
-          <img id="hero-photo" src="assets/profile.jpg" alt="Portrait of Federico Alscher" width="400" height="400"
-            class="rounded-2xl shadow-xl" />
+
+        <div class="md:col-span-2 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="relative">
+            <!-- Decorative ring -->
+            <div class="absolute -inset-4 rounded-2xl border-2 border-dashed border-primary-200/40 rotate-3"></div>
+            <div class="absolute -inset-2 rounded-2xl bg-gradient-to-br from-primary-400/10 to-accent-400/10 -rotate-2"></div>
+            <img id="hero-photo" src="assets/profile.jpg" alt="Portrait of Federico Alscher" width="400" height="400"
+              class="relative rounded-2xl shadow-2xl shadow-primary-900/10 object-cover w-[320px] h-[320px] md:w-[380px] md:h-[380px]" />
+            <!-- Floating accent -->
+            <div class="absolute -bottom-3 -right-3 w-20 h-20 bg-accent-500 rounded-xl flex items-center justify-center shadow-lg rotate-6">
+              <span class="text-white font-heading font-bold text-xs leading-tight text-center">BME<br/>Eng.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 id="about-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">About</h2>
-        <div class="max-w-3xl mx-auto" data-aos="fade-up">
-          <!-- Texto por defecto -->
-          <p id="about-text" class="text-lg leading-relaxed text-justify">
-            Biomedical Engineer and co-founder focused on data analytics and deployable solutions. I lead end-to-end
-            delivery across problem definition, requirements, data integration/cleaning, feature engineering, model
-            training and validation, and production deployment—aligning stakeholders, timelines, and measurable
-            outcomes. I work with Python, SQL, MATLAB, and C/C++, combining rapid prototyping with quality standards and
-            performance measurement. I also have experience teaching machine learning and programming at the university
-            level.
+    <section id="about" class="py-24 relative">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="flex items-center gap-4 mb-12" data-aos="fade-up">
+          <h2 id="about-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">About</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-primary-200 to-transparent"></div>
+        </div>
+        <div class="max-w-3xl" data-aos="fade-up" data-aos-delay="100">
+          <p id="about-text" class="text-lg leading-relaxed text-slate-600 text-justify">
+            Biomedical Engineer and co-founder focused on data analytics and deployable solutions.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 id="experience-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Experience</h2>
-        <div id="experience-list" class="max-w-4xl mx-auto space-y-12"></div>
+    <section id="experience" class="py-24 bg-white relative">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(14,116,144,0.03),transparent_50%)]"></div>
+      <div class="container mx-auto px-6 max-w-6xl relative">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
+          <h2 id="experience-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">Experience</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-primary-200 to-transparent"></div>
+        </div>
+        <div id="experience-list" class="timeline-container"></div>
       </div>
     </section>
 
-
+    <!-- Leadership -->
+    <section id="leadership" class="py-24 relative">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
+          <h2 id="leadership-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">Academic Leadership</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-accent-200 to-transparent"></div>
+        </div>
+        <div id="leadership-list" class="grid md:grid-cols-2 gap-6"></div>
+      </div>
+    </section>
 
     <!-- Skills -->
-    <section id="skills" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 id="skills-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Skills</h2>
-        <div id="skills-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    <section id="skills" class="py-24 bg-white relative">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(249,115,22,0.03),transparent_50%)]"></div>
+      <div class="container mx-auto px-6 max-w-6xl relative">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
+          <h2 id="skills-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">Skills</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-primary-200 to-transparent"></div>
+        </div>
+        <div id="skills-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </div>
     </section>
 
     <!-- Publications -->
-    <section id="publications" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 id="publications-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Publications</h2>
-        <div id="publications-list" class="max-w-3xl mx-auto space-y-6"></div>
+    <section id="publications" class="py-24 relative">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
+          <h2 id="publications-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">Publications</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-primary-200 to-transparent"></div>
+        </div>
+        <div id="publications-list" class="max-w-3xl space-y-6"></div>
       </div>
     </section>
 
     <!-- Education -->
-    <section id="education" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 id="education-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Education</h2>
-        <div id="education-list" class="max-w-2xl mx-auto space-y-6"></div>
+    <section id="education" class="py-24 bg-white relative">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-up">
+          <h2 id="education-title" class="font-heading text-3xl md:text-4xl font-700 text-primary-900">Education</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-primary-200 to-transparent"></div>
+        </div>
+        <div id="education-list" class="max-w-2xl space-y-6"></div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 id="contact-title" class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contact</h2>
-        <div class="max-w-md mx-auto text-center">
-          <div class="space-y-4" data-aos="fade-up">
+    <section id="contact" class="py-24 bg-primary-900 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(20,184,166,0.15),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(249,115,22,0.08),transparent_50%)]"></div>
+      <div class="container mx-auto px-6 max-w-6xl relative">
+        <h2 id="contact-title" class="font-heading text-3xl md:text-4xl font-700 text-white text-center mb-12" data-aos="fade-up">Contact</h2>
+        <div class="max-w-md mx-auto text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="space-y-5">
             <a id="contact-email" href="mailto:fede.alscher@gmail.com"
-              class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
-              <i data-feather="mail" class="mr-3"></i>
+              class="group flex items-center justify-center text-primary-200 hover:text-white text-lg transition-colors">
+              <i data-feather="mail" class="mr-3 w-5 h-5 text-accent-400"></i>
               <span>fede.alscher@gmail.com</span>
             </a>
-            <br />
             <a id="contact-linkedin" href="https://ar.linkedin.com/in/federicoalscher/en" target="_blank"
-              class="inline-flex items-center text-blue-600 hover:text-blue-800 text-lg">
-              <i data-feather="linkedin" class="mr-3"></i>
+              class="group flex items-center justify-center text-primary-200 hover:text-white text-lg transition-colors">
+              <i data-feather="linkedin" class="mr-3 w-5 h-5 text-accent-400"></i>
               <span>LinkedIn</span>
             </a>
           </div>
@@ -190,44 +264,43 @@
 
   <!-- Contact Modal -->
   <div id="contact-modal"
-    class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-[100] hidden">
-    <div class="bg-white w-full max-w-xl rounded-2xl shadow-xl overflow-hidden" role="dialog" aria-modal="true"
+    class="fixed inset-0 bg-primary-900/60 backdrop-blur-md flex items-center justify-center p-4 z-[100] hidden">
+    <div class="bg-cream-50 w-full max-w-xl rounded-2xl shadow-2xl overflow-hidden border border-primary-100/50" role="dialog" aria-modal="true"
       aria-labelledby="contact-modal-title">
-      <div class="flex items-center justify-between px-6 py-4 border-b">
-        <h3 id="contact-modal-title" class="text-xl font-semibold">Contact</h3>
-        <button id="contact-close" class="p-2 rounded hover:bg-slate-100" aria-label="Close">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-primary-100/30 bg-white/50">
+        <h3 id="contact-modal-title" class="font-heading text-xl font-semibold text-primary-900">Contact</h3>
+        <button id="contact-close" class="p-2 rounded-lg hover:bg-primary-50 text-slate-400 hover:text-primary-700 transition-colors" aria-label="Close">
           <i data-feather="x"></i>
         </button>
       </div>
 
-      <form id="contact-form" class="px-6 py-5 space-y-4">
+      <form id="contact-form" class="px-6 py-6 space-y-5">
         <div>
-          <label for="cf-name" id="cf-label-name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+          <label for="cf-name" id="cf-label-name" class="block text-sm font-medium text-slate-600 mb-1.5">Name</label>
           <input id="cf-name" name="name" type="text" required
-            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full rounded-xl border border-primary-100 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-shadow"
             placeholder="Your name">
         </div>
 
         <div>
-          <label for="cf-email" id="cf-label-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+          <label for="cf-email" id="cf-label-email" class="block text-sm font-medium text-slate-600 mb-1.5">Email</label>
           <input id="cf-email" name="email" type="email" required
-            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full rounded-xl border border-primary-100 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-shadow"
             placeholder="you@email.com">
         </div>
 
         <div>
-          <label for="cf-message" id="cf-label-message"
-            class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+          <label for="cf-message" id="cf-label-message" class="block text-sm font-medium text-slate-600 mb-1.5">Message</label>
           <textarea id="cf-message" name="message" rows="5" required
-            class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full rounded-xl border border-primary-100 bg-white px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-shadow resize-none"
             placeholder="Write your message..."></textarea>
         </div>
 
         <div class="flex items-center justify-end gap-3 pt-2">
           <button type="button" id="cf-cancel"
-            class="px-4 py-2 rounded-md border border-slate-300 hover:bg-slate-50">Cancel</button>
+            class="px-5 py-2.5 rounded-full border border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 text-sm font-medium transition-colors">Cancel</button>
           <button type="submit" id="cf-send"
-            class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">Send</button>
+            class="px-5 py-2.5 rounded-full bg-primary-800 text-white hover:bg-primary-700 text-sm font-medium transition-all shadow-md hover:shadow-lg">Send</button>
         </div>
 
         <p id="cf-feedback" class="text-sm mt-2 hidden"></p>
@@ -236,9 +309,10 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-slate-800 text-white py-8">
-    <div class="container mx-auto px-6 text-center">
+  <footer class="bg-primary-950 text-primary-300 py-8 border-t border-primary-800/30">
+    <div class="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row items-center justify-between text-sm">
       <p>&copy; <span id="current-year"></span> Federico Alscher. <span id="rights">All rights reserved.</span></p>
+      <p class="mt-2 md:mt-0 text-primary-400/50 text-xs">Designed with precision</p>
     </div>
   </footer>
 </body>
