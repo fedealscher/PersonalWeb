@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -234,7 +235,7 @@ body {
   align-items: center;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   transition: all 0.2s ease;
@@ -260,7 +261,7 @@ body {
   align-items: center;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   background: rgba(13, 148, 136, 0.06);

@@ -518,7 +518,7 @@ function renderExperience(t) {
 
     let bulletsHtml = it.bullets && it.bullets.length
       ? `<ul class="space-y-2 mt-4">${it.bullets.map((b) =>
-          `<li class="flex items-start text-slate-600 text-sm leading-relaxed">
+          `<li class="flex items-start text-slate-600 text-base leading-relaxed">
             <span class="w-1.5 h-1.5 rounded-full bg-primary-400 mt-2 mr-3 shrink-0"></span>
             <span>${b}</span>
           </li>`
@@ -526,16 +526,16 @@ function renderExperience(t) {
       : '';
 
     let descriptionHtml = it.description
-      ? `<p class="text-slate-600 mt-3 leading-relaxed text-[0.95rem]">${it.description}</p>`
+      ? `<p class="text-slate-600 mt-3 leading-relaxed text-base">${it.description}</p>`
       : '';
 
     item.innerHTML = `
       <div class="card-experience">
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
-          <h3 class="font-heading text-lg font-600 text-primary-900">${it.role}</h3>
+          <h3 class="font-heading text-xl font-600 text-primary-900">${it.role}</h3>
           <span class="date-badge">${it.dates}</span>
         </div>
-        <p class="text-accent-600 text-sm font-medium">${it.org}</p>
+        <p class="text-accent-600 text-base font-medium">${it.org}</p>
         ${descriptionHtml}
         ${bulletsHtml}
       </div>
@@ -557,10 +557,10 @@ function renderLeadership(t) {
     card.setAttribute("data-aos-delay", String(i * 100));
     card.innerHTML = `
       <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
-        <h3 class="font-heading text-lg font-600 text-primary-900">${it.role}</h3>
+        <h3 class="font-heading text-xl font-600 text-primary-900">${it.role}</h3>
         <span class="date-badge">${it.dates}</span>
       </div>
-      <p class="text-slate-600 leading-relaxed text-[0.95rem]">${it.description}</p>
+      <p class="text-slate-600 leading-relaxed text-base">${it.description}</p>
     `;
     wrap.appendChild(card);
   });
@@ -589,7 +589,7 @@ function renderSkills(t) {
     col.innerHTML = `
       <div class="flex items-center gap-3 mb-4">
         <div class="${iconColor}">${skillIconSvg(g.color)}</div>
-        <h3 class="font-heading text-base font-600 text-slate-800">${g.name}</h3>
+        <h3 class="font-heading text-lg font-600 text-slate-800">${g.name}</h3>
       </div>
       <div class="flex flex-wrap gap-2">
         ${g.chips.map((c) => `<span class="chip ${colorClass}">${c}</span>`).join("")}
@@ -609,9 +609,9 @@ function renderPublications(t) {
     card.setAttribute("data-aos", "fade-up");
     card.setAttribute("data-aos-delay", String(i * 100));
     card.innerHTML = `
-      <h3 class="font-heading text-base font-600 text-primary-900 mb-2 leading-snug">${p.title}</h3>
-      <p class="text-slate-500 text-sm mb-3">${p.venue}</p>
-      <a href="${p.doiUrl}" class="inline-flex items-center text-primary-600 hover:text-accent-600 text-sm font-medium transition-colors group" target="_blank" rel="noopener">
+      <h3 class="font-heading text-lg font-600 text-primary-900 mb-2 leading-snug">${p.title}</h3>
+      <p class="text-slate-500 text-base mb-3">${p.venue}</p>
+      <a href="${p.doiUrl}" class="inline-flex items-center text-primary-600 hover:text-accent-600 text-base font-medium transition-colors group" target="_blank" rel="noopener">
         <i data-feather="external-link" class="mr-2 w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
         ${p.doiText}
       </a>
